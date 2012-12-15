@@ -13,8 +13,8 @@ Roadmap:
 The directory structure
 -----------------------
 The programming language is Groovy (version 1.8.6).
-- `lib`: The compiled library(ies), from which you can build `tmf.jar` for the add-on.
 - `Pangloss`: The add-on, which is the main deliverable. The build process (from the folders `scripts` and `scripts_lib`) is manual.
+- `lib`: The compiled library(ies), from which you can build `tmf.jar` for the add-on.
 - `resources`: Some stylesheets for file transformation.
 - `scripts`: The Groovy script(s) contained in the add-on.
 - `scripts_lib`: The library(ies) contained in the add-on. Currently, there is only one library, called `tmf`.
