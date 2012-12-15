@@ -61,7 +61,7 @@ class TestGis {
 	}
 	@Test
 	public final void testGetFilename() {
-		assertEquals GisFactory.FILENAME, gis.getFilename()
+		assertEquals GisFactory.FILENAME, gis.filename
 	}
 	
 	@Test

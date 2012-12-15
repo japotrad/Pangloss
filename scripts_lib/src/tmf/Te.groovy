@@ -33,12 +33,12 @@ class Te extends Sn {
 	/**
 	 *<code>sasForTe</code> is the list of Standard Attributes applicable only to the current Concept Freeplane node. Keys of the map entries are attribute names.
 	 */
-	private Map<String,String> sasForTe
+	private Map<String,String> sasForTe = new HashMap<String,String>()
 	/**
 	 *<code>tovasForTe</code> is the list of Transitive OVerwritable Attributes applicable to Terminological Entries.
 	 * Keys of the map entries are attribute names.
 	 */
-	private Map<String,String> tovasForTe
+	private Map<String,String> tovasForTe = new HashMap<String,String>()
 	/**
 	 *<code>tovaNamesForTe</code> is the list of Transitive OVerwritable Attributes names applicable to Terminological Entries.
 	 * It is a subset of <code>tovaNames</code> of <code>Tdc</code> class.
@@ -62,7 +62,22 @@ class Te extends Sn {
 	def toGmt(MarkupBuilder xml) {
 		xml.struct(type:"TE"){
 			this.informationUnits.each { iu -> iu.toGmt(xml, tovasForTe)}
-			this.children.each { id, ls->ls.toGmt(xml)}
+			// Output the Language Section.
+			// Output the source Language Section first (if any).
+			// Then, output the target Language Section (if any).
+			// Then, output the other Language Section (if any).
+			if (this.children.containsKey(this.id+"_"+Constants.LsMode.SOURCE.toString())){
+				this.children[this.id+"_"+Constants.LsMode.SOURCE.toString()].toGmt(xml)
+			}
+			if (this.children.containsKey(this.id+"_"+Constants.LsMode.TARGET.toString())){
+				this.children[this.id+"_"+Constants.LsMode.TARGET.toString()].toGmt(xml)
+			}
+			
+			this.children.each { id, ls->
+				if ( (id != this.id+"_"+Constants.LsMode.SOURCE.toString()) && (id != this.id+"_"+Constants.LsMode.TARGET.toString()) ){
+					ls.toGmt(xml)
+				}
+			}
 		}
 	}
 	/**
@@ -93,11 +108,11 @@ class Te extends Sn {
 				// The Terminological Entry is bilingual
 				LogUtils.info(this.class.name+'	The Terminological Entry \"'+node.plainText+'\" is bilingual.')
 				tovaNamesForTe.addAll(["sourceLanguage","targetLanguage"])
-				def sourceLs = new Ls(node.id+"_"+Constants.LsMode.SOURCE.toString())
+				def sourceLs = new Ls(this.id+"_"+Constants.LsMode.SOURCE.toString())
 				sourceLs.populate(node, tovasForTe, Constants.LsMode.SOURCE)
 				LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the Language Section: '+Constants.LsMode.SOURCE.toString())
 				this.add(sourceLs)
-				def targetLs = new Ls(node.id+"_"+Constants.LsMode.TARGET.toString())
+				def targetLs = new Ls(this.id+"_"+Constants.LsMode.TARGET.toString())
 				targetLs.populate(node, tovasForTe, Constants.LsMode.TARGET)
 				LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the Language Section: '+Constants.LsMode.TARGET.toString())
 				this.add(targetLs)
@@ -111,7 +126,7 @@ class Te extends Sn {
 			if (node.note) {
 				sasForTe.put("context", node.note.to.plain)
 			}
-			def ls = new Ls(node.id+"_"+Constants.LsMode.CONCEPT.toString())
+			def ls = new Ls(this.id+"_"+Constants.LsMode.CONCEPT.toString())
 			ls.populate(node, tovasForTe, Constants.LsMode.CONCEPT)
 			LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the Language Section: '+Constants.LsMode.CONCEPT.toString())
 			this.add(ls)
