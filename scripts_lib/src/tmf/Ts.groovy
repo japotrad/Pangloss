@@ -28,7 +28,7 @@ class Ts extends Sn {
 	 *<code>attributes</code> is the map of contextual attributes of the Term Section object.
 	 * Keys of the map entries are the attribute names.
 	 */
-	private Map<String,String> attributes
+	private Map<String,String> attributes = new HashMap<String,String>()
 	
 	/**
 	 * Outputs the Term Section in an XML format.

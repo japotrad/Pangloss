@@ -1,4 +1,4 @@
-package tmf;
+package tmf
 
 import static org.junit.Assert.*
 

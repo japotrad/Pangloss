@@ -78,6 +78,24 @@ class TestTe {
 		teIu.toGmt(xmlIu)
 		def xmlDiffIu = new Diff(writerIu.toString(), "<struct type='TE'><feat type='projectSubset'>my project</feat></struct>")
 		assert xmlDiffIu.similar()
+		// Bilingual Term Entry
+		Te teBilingual = new Te()
+		def writerBilingual = new StringWriter()
+		def xmlBilingual = new MarkupBuilder(writerBilingual)
+		teBilingual.id="Bilingual"
+		Ls lsSource=LsFactory.getTestLs()
+		lsSource.id=teBilingual.id+"_"+Constants.LsMode.SOURCE.toString()
+		lsSource.add(new Iu("objectLanguage","String","en"))
+		teBilingual.add(lsSource) 
+		Ls lsTarget=LsFactory.getTestLs()
+		lsTarget.id=teBilingual.id+"_"+Constants.LsMode.TARGET.toString()
+		lsTarget.add(new Iu("objectLanguage","String","fr"))
+		teBilingual.add(lsTarget)
+		teBilingual.toGmt(xmlBilingual)
+		println(writerBilingual.toString())
+		// The source Language Section shall be output before the target Language Section
+		def xmlDiffBilingual = new Diff(writerBilingual.toString(), '<struct type="TE"><struct type="LS" ><feat type="objectLanguage">en</feat></struct><struct type="LS" ><feat type="objectLanguage">fr</feat></struct></struct>')
+		assert xmlDiffBilingual.similar()
 	}
 
 	@Test
