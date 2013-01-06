@@ -17,18 +17,18 @@ import static Constants
  * A Terminological Data Collection contains information on concepts of specific subject fields
  * It is the root of a glossary, as described in ISO 16642
  * @author Stephane Aubry
- * @see Sn
+ * @see tmf.Sn
  */
 @InheritConstructors
 class Tdc extends Sn {
 	/**
 	 * <code>globalInformationSection</code> contains the Global Information Section.
-	 * @see Gis
+	 * @see tmf.Gis
 	 */
 	private globalInformationSection = new Gis()
 	/**
 	 * <code>complementaryInformation</code> contains the Complementary Information.
-	 * @see Ci
+	 * @see tmf.Ci
 	 */
 	private complementaryInformation = new Ci()
 	/**
@@ -36,7 +36,7 @@ class Tdc extends Sn {
 	 * The value of a tova is valid on the whole branch starting from current node. unless it is overridden in a descendant node.
 	 * The superset list of tova names is defined in <code>TovaNames</code>.
 	 * For a given map node, a Transitive OVerwritable Attribute has at most one value.
-	 * @see Constants
+	 * @see tmf.Constants
 	 */
 	private Map<String,String> tovasForTdc = new HashMap<String,String>()
 	/**
@@ -46,17 +46,20 @@ class Tdc extends Sn {
 	private List<String> tovaNames= new ArrayList<String>()
 
 	/**
-	 * Fills the <code>Gis</code> of the <code>Tdc</code> with data. 
+	 * Fills the <code>Tdc</code>, its <code>Gis</code> with data, and request the creation of a <code>Te</code> collection according to the children nodes of the glossary root node in the Freeplane map. 
 	 * Data is read from the root node of the glossary in the Freeplane map.
 	 * Usually, this node is the root node of the map itself (One glossary per map).
-	 * Details of the created Information Units:
-	 *  - file identifier				;	string	;	text of the node
-	 *  - name of the node attribute(s)	;	string	;	value of the node attribute(s)	
-	 * @param node The root node of the glossary in the Freeplane map
-	 * @return Filename of the Terminological Data Collection    
-	 * @see Gis
+	 * Details of the created Information Units in the <code>Tdc</code> object:<ul>
+	 * <li><code>customerSubset</code></li>
+	 * <li><code>languageID</code></li>
+	 * <li><code>objectLanguage</code></li>
+	 * <li><code>projectSubset</code></li>
+	 * <li><code>sourceLanguage</code></li>
+	 * <li><code>targetLanguage</code></li></ul>
+	 * @param rootNode The root node of the glossary in the Freeplane map.    
+	 * @see tmf.Gis
 	 */
-	String populate(Proxy.Node rootNode) {
+	void populate(Proxy.Node rootNode) {
 		tovaNames.addAll(["customerSubset","languageID","objectLanguage", "projectSubset", "sourceLanguage", "targetLanguage"])
 		if (rootNode.attributes.size() > 0) {
 			for (int i in 0..rootNode.attributes.size()-1) {
@@ -70,8 +73,25 @@ class Tdc extends Sn {
 		}
 		globalInformationSection.populate(rootNode, tovasForTdc)
 		this.recursivePopulate(rootNode, tovasForTdc)
-		return(globalInformationSection.filename)
 	}
+	/**
+	 * Sets the filename of the Terminological Data Collection.
+	 * Example: 'My termbase.xls'
+	 * @param filename Filename of the Terminological Data Collection
+	 */
+	void setFilename(String filename){
+		globalInformationSection.filename=filename
+	}
+	/**
+	 * Create a collection of the <code>Te</code> according to the children nodes of the glossary root node in the Freeplane map, and populate them.
+	 * Data is read from the root node of the glossary in the Freeplane map.
+	 * Usually, this node is the root node of the map itself (One glossary per map).
+	 * The recursion goes through nodes the style of which is either <code>Concept</code>, <code>Field</code> or <code>Term</code>.
+	 * A Terminological Entry is created for each valid <code>Concept</code> node.
+	 * @param node The root node of the glossary in the Freeplane map.
+	 * @param tovas The map node of Transitive OVerwritable Attributes. Keys of the map entries are attribute names.
+	 * @see tmf.Te
+	 */
 	def private recursivePopulate(Proxy.Node node, Map<String,String> tovas) {	
 		if (node.style.name=="Concept" && node.plainText.length()>0){
 			if(node.plainText.substring(node.plainText.length() - 1)=="="){
@@ -86,7 +106,7 @@ class Tdc extends Sn {
 		}
 		node.children.each {
 			def childNode = it
-			if ((childNode.style.name=="Concept") || (childNode.style.name=="Term") || (childNode.style.name=="Field")){
+			if ((childNode.style.name=="Concept") || (childNode.style.name=="Field") || (childNode.style.name=="Term")){
 				def Map<String,String> childTovas = new HashMap<String,String>()
 				childTovas=tovas.clone()
 				if (childNode.attributes.size() > 0) {
