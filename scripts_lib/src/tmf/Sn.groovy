@@ -32,7 +32,7 @@ class Sn {
 	 * <code>informationUnits</code> is the content of the object.
 	 * e.g. a definition attached to a Terminological Entry.
 	 * An instance of an Information Unit is attached to one and only one Structural Node.
-	 * @see Iu
+	 * @see tmf.Iu
 	 */
 	protected List<Iu> informationUnits = new ArrayList<Iu>()
 	
