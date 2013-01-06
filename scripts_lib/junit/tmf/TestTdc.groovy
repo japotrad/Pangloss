@@ -77,6 +77,12 @@ class TestTdc {
 		assertEquals "tmf.Te", tdc.children[TeFactory.ID].class.name
 		
 	}
+	
+	@Test
+	public final void setFilename() {
+		tdc.setFilename("tutu")
+		assertEquals "tutu", TdcFactory.GLOBALINFORMATIONSECTION.filename
+	}
 
 	@Test
 	public final void testPopulate() {
