@@ -32,7 +32,7 @@ class Gis extends Sn {
 	/**
 	 *<code>filename</code> is the name of the file associated to the Terminological Data Collection.
 	 */
-	private String filename
+	public String filename
 	/**
 	 * Outputs the Global Information Section in an XML format.
 	 * The format is named <code>GMT</code> (Generic Mapping Tool) and is specified in ISO 16642.
@@ -46,9 +46,6 @@ class Gis extends Sn {
 			}
 		}
 	}
-	//String getFilename(){
-	//	return(this.filename)
-	//}
 	/**
 	 * Fills the Global Information Section with data read from the Freeplane node.
 	 * Details of the created Information Units (if an attribute with the same name exists in the Freeplane node): <ul>
@@ -76,9 +73,9 @@ class Gis extends Sn {
 				}
 			}	
 		}
-		// The default value for the fileIdentifier is the text of the rootNode.
-		if (attributesForGis.containsKey("fileIdentifier")==false){
-			attributesForGis.put("fileIdentifier", rootNode.plainText)
+		
+		if (this.filename){
+			attributesForGis.put("fileIdentifier", this.filename)
 		}
 		this.filename = attributesForGis["fileIdentifier"]
 		attributesForGis.each { key, value->
@@ -87,7 +84,6 @@ class Gis extends Sn {
 				LogUtils.info(this.class.name+'	Adding the Information Unit: '+key+', string, '+value)
 				this.add(iu)
 			}
-		}
-		
+		}	
 	}
 }
