@@ -1,6 +1,6 @@
 <map version="freeplane 1.2.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Pangloss" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1354895048094" BACKGROUND_COLOR="#97c7dc">
+<node TEXT="Pangloss" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1357404804568" BACKGROUND_COLOR="#97c7dc">
 <font SIZE="16" BOLD="true" ITALIC="true"/>
 <hook NAME="MapStyle">
     <properties show_icon_for_attributes="true" show_note_icons="true"/>
@@ -52,10 +52,10 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="11"/>
-<attribute_layout NAME_WIDTH="135"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="12"/>
+<attribute_layout NAME_WIDTH="135" VALUE_WIDTH="125"/>
 <attribute NAME="name" VALUE="Pangloss"/>
-<attribute NAME="version" VALUE="v0.1"/>
+<attribute NAME="version" VALUE="v0.2"/>
 <attribute NAME="author" VALUE="Stephane Aubry"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="1.2.18"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -182,8 +182,9 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;&lt;tabbed_pane&gt;&#xa;&lt;tab name=&quot;plugins&quot;&gt;&#xa;&lt;separator name=&quot;pangloss&quot;&gt;&#xa;&lt;boolean name=&quot;pangloss_bilingual_notation&quot;/&gt;&#xa;&lt;/separator&gt;&#xa;&lt;/tab&gt;&#xa;&lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_1560246146" CREATED="1356528131036" MODIFIED="1356529536606"/>
 </node>
-<node TEXT="default.properties" POSITION="left" ID="ID_829284969" CREATED="1354893964426" MODIFIED="1354893964435">
+<node TEXT="default.properties" POSITION="left" ID="ID_829284969" CREATED="1354893964426" MODIFIED="1356529176483">
 <edge COLOR="#00ffff" WIDTH="3"/>
 <richcontent TYPE="NOTE">
 
@@ -198,6 +199,8 @@
   </body>
 </html>
 </richcontent>
+<attribute_layout NAME_WIDTH="168"/>
+<attribute NAME="pangloss_bilingual_notation" VALUE="true"/>
 </node>
 <node TEXT="translations" POSITION="left" ID="ID_301113394" CREATED="1354893964437" MODIFIED="1354893964446">
 <edge COLOR="#ffff00" WIDTH="3"/>
@@ -214,32 +217,41 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="en" ID="ID_1742695989" CREATED="1354893964447" MODIFIED="1355157322867">
+<node TEXT="en" ID="ID_1742695989" CREATED="1354893964447" MODIFIED="1357405404623">
 <attribute_layout NAME_WIDTH="205" VALUE_WIDTH="191"/>
 <attribute NAME="addons.${name}" VALUE="Pangloss"/>
-<attribute NAME="addons.exportTermbase" VALUE="Export the terms"/>
-<attribute NAME="addons.exportTsv2col" VALUE="Tab-separated values (terms only)"/>
+<attribute NAME="addons.exportTermbase" VALUE="Export the terms..."/>
+<attribute NAME="addons.exportParameterButton" VALUE="Parameters..."/>
+<attribute NAME="OptionPanel.separator.pangloss" VALUE="Pangloss"/>
+<attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="Simple bilingual notation"/>
+<node TEXT="OptionPanel.separator.pangloss" ID="ID_575741755" CREATED="1356528677384" MODIFIED="1356528677384"/>
 </node>
-<node TEXT="fr" ID="ID_1609652132" CREATED="1354893964447" MODIFIED="1355155780342">
+<node TEXT="fr" ID="ID_1609652132" CREATED="1354893964447" MODIFIED="1357405408553">
 <attribute_layout NAME_WIDTH="205" VALUE_WIDTH="298"/>
 <attribute NAME="addons.${name}" VALUE="Pangloss"/>
-<attribute NAME="addons.exportTermbase" VALUE="Exporter les termes"/>
-<attribute NAME="addons.exportTsv2col" VALUE="Tab-separated values (termes uniquement)"/>
+<attribute NAME="addons.exportTermbase" VALUE="Exporter les termes..."/>
+<attribute NAME="addons.exportParameterButton" VALUE="Param&#xe8;tres..."/>
+<attribute NAME="OptionPanel.separator.pangloss" VALUE="Pangloss"/>
+<attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="Notation bilingue simplifi&#xe9;e"/>
 </node>
-<node TEXT="es" ID="ID_918771512" CREATED="1354893964447" MODIFIED="1355158679105">
+<node TEXT="es" ID="ID_918771512" CREATED="1354893964447" MODIFIED="1357405415745">
 <attribute_layout NAME_WIDTH="205" VALUE_WIDTH="298"/>
 <attribute NAME="addons.${name}" VALUE="Pangloss"/>
-<attribute NAME="addons.exportTermbase" VALUE="Exportar los t\u00e9rminos"/>
-<attribute NAME="addons.exportTsv2col" VALUE="Tab-separated values (t\u00e9rminos solamente)"/>
+<attribute NAME="addons.exportTermbase" VALUE="Exportar los t\u00e9rminos..."/>
+<attribute NAME="addons.exportParameterButton" VALUE="Par&#xe1;metros..."/>
+<attribute NAME="OptionPanel.separator.pangloss" VALUE="Pangloss"/>
+<attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="Notaci&#xf3;n biling&#xfc;e simple"/>
 </node>
-<node TEXT="ja" ID="ID_1059175717" CREATED="1354893964447" MODIFIED="1355574747247">
+<node TEXT="ja" ID="ID_1059175717" CREATED="1354893964447" MODIFIED="1357405423759">
 <attribute_layout NAME_WIDTH="205" VALUE_WIDTH="298"/>
 <attribute NAME="addons.${name}" VALUE="&#x30d1;&#x30f3;&#x30b0;&#x30ed;&#x30b9;"/>
-<attribute NAME="addons.exportTermbase" VALUE="&#x7528;&#x8a9e;&#x3092;&#x30a8;&#x30af;&#x30b9;&#x30dd;&#x30fc;&#x30c8;"/>
-<attribute NAME="addons.exportTsv2col" VALUE="Tab-separated values&#xff08;&#x7528;&#x8a9e;&#x306e;&#x307f;&#xff09;"/>
+<attribute NAME="addons.exportTermbase" VALUE="&#x7528;&#x8a9e;&#x3092;&#x30a8;&#x30af;&#x30b9;&#x30dd;&#x30fc;&#x30c8;..."/>
+<attribute NAME="addons.exportParameterButton" VALUE="&#x8a2d;&#x5b9a;..."/>
+<attribute NAME="OptionPanel.separator.pangloss" VALUE="&#x30d1;&#x30f3;&#x30b0;&#x30ed;&#x30b9;"/>
+<attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="&#x7c21;&#x5358;&#x306a;&#x30d0;&#x30a4;&#x30ea;&#x30f3;&#x30ac;&#x30eb;&#x8868;&#x8a18;&#x6cd5;"/>
 </node>
 </node>
-<node TEXT="deinstall" POSITION="left" ID="ID_1889438955" CREATED="1354893964455" MODIFIED="1355066430075">
+<node TEXT="deinstall" POSITION="left" ID="ID_1889438955" CREATED="1354893964455" MODIFIED="1357434435666">
 <edge COLOR="#7c0000" WIDTH="3"/>
 <richcontent TYPE="NOTE">
 
@@ -259,7 +271,8 @@
 <attribute NAME="delete" VALUE="${installationbase}/scripts/ExportTermbase.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/Pangloss.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/Pangloss-icon.png"/>
-<attribute NAME="delete" VALUE="${installationbase}/resources/xsl/gmt2tsv.xsl"/>
+<attribute NAME="delete" VALUE="${installationbase}/pangloss/gmt2tsv.xsl"/>
+<attribute NAME="delete" VALUE="${installationbase}/pangloss/export.properties"/>
 <attribute NAME="delete" VALUE="${installationbase}/lib/tmf.jar"/>
 </node>
 <node TEXT="scripts" POSITION="right" ID="ID_1652832201" CREATED="1354893964472" MODIFIED="1354893964493">
@@ -385,10 +398,10 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="ExportTermbase.groovy" ID="ID_499338003" CREATED="1354894330862" MODIFIED="1354952188782">
+<node TEXT="ExportTermbase.groovy" ID="ID_499338003" CREATED="1354894330862" MODIFIED="1357405390084">
 <attribute_layout NAME_WIDTH="280" VALUE_WIDTH="202"/>
-<attribute NAME="menuTitleKey" VALUE="addons.exportTsv2col"/>
-<attribute NAME="menuLocation" VALUE="/menu_bar/file/exportTermbase"/>
+<attribute NAME="menuTitleKey" VALUE="addons.exportTermbase"/>
+<attribute NAME="menuLocation" VALUE="/menu_bar/file"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
 <attribute NAME="keyboardShortcut" VALUE=""/>
 <attribute NAME="execute_scripts_without_asking" VALUE="true"/>
@@ -448,10 +461,8 @@
 <node TEXT="" ID="ID_931073285" CREATED="1354903320015" MODIFIED="1354903320015"/>
 </node>
 </node>
-<node TEXT="resources" ID="ID_280166968" CREATED="1354936938718" MODIFIED="1354936946724">
-<node TEXT="xsl" ID="ID_1905105838" CREATED="1354908462776" MODIFIED="1354908474646">
+<node TEXT="pangloss" ID="ID_310562204" CREATED="1357404146652" MODIFIED="1357404154889">
 <node TEXT="gmt2tsv.xsl" ID="ID_1635419669" CREATED="1354908489879" MODIFIED="1354908492968"/>
-</node>
 </node>
 </node>
 <node TEXT="images" POSITION="right" ID="ID_1122751729" CREATED="1354893964521" MODIFIED="1354893964533">
