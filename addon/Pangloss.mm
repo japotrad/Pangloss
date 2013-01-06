@@ -110,7 +110,34 @@
   </body>
 </html>
 </richcontent>
-<node TEXT=" Pangloss adds to Freeplane some terminology-oriented features." ID="ID_917638461" CREATED="1354894048441" MODIFIED="1354894126039"><richcontent TYPE="DETAILS">
+<node ID="ID_917638461" CREATED="1354894048441" MODIFIED="1357462802324"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#160;<font size="4">Pangloss adds to Freeplane some terminology-oriented features. </font>
+    </p>
+    <p>
+      <b>Saving a termbase:</b>
+    </p>
+    <ul>
+      <li>
+        Supported output formats: GMT, 2-column Tab-separated value,
+      </li>
+      <li>
+        Save dialog (GUI) for selecting the format and path of the file where the termbase should be saved.
+      </li>
+      <li>
+        Support custom xsl converter from the native GMT format. Example: pangloss/gmt2tsv.xsl in the user directory.
+      </li>
+    </ul>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -140,6 +167,27 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="v0.2" ID="ID_731500961" CREATED="1357461654176" MODIFIED="1357462082906">
+<node ID="ID_1142520000" CREATED="1357461713066" MODIFIED="1357462555848"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        Save dialog (GUI) for selecting the format and path of the file where the termbase should be saved.
+      </li>
+      <li>
+        Support custom xsl converter from GMT format. Example: pangloss/gmt2tsv.xsl in the user directory.
+      </li>
+    </ul>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 <node TEXT="license" POSITION="left" ID="ID_465998270" CREATED="1354893964368" MODIFIED="1354893964378">
 <edge COLOR="#00ff00" WIDTH="3"/>
@@ -251,7 +299,7 @@
 <attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="&#x7c21;&#x5358;&#x306a;&#x30d0;&#x30a4;&#x30ea;&#x30f3;&#x30ac;&#x30eb;&#x8868;&#x8a18;&#x6cd5;"/>
 </node>
 </node>
-<node TEXT="deinstall" POSITION="left" ID="ID_1889438955" CREATED="1354893964455" MODIFIED="1357434435666">
+<node TEXT="deinstall" POSITION="left" ID="ID_1889438955" CREATED="1354893964455" MODIFIED="1357462993382">
 <edge COLOR="#7c0000" WIDTH="3"/>
 <richcontent TYPE="NOTE">
 
@@ -266,13 +314,14 @@
   </body>
 </html>
 </richcontent>
-<attribute_layout NAME_WIDTH="49" VALUE_WIDTH="443"/>
+<attribute_layout NAME_WIDTH="70" VALUE_WIDTH="443"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/scripts/ExportTermbase.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/Pangloss.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/Pangloss-icon.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/pangloss/gmt2tsv.xsl"/>
 <attribute NAME="delete" VALUE="${installationbase}/pangloss/export.properties"/>
+<attribute NAME="delete" VALUE="${installationbase}/pangloss"/>
 <attribute NAME="delete" VALUE="${installationbase}/lib/tmf.jar"/>
 </node>
 <node TEXT="scripts" POSITION="right" ID="ID_1652832201" CREATED="1354893964472" MODIFIED="1354893964493">
