@@ -107,12 +107,12 @@ class TestTe {
 		expect(nodeMock.getDetails()).andReturn(new Convertible("A car is an automotive vehicle.")).anyTimes()
 		replay(nodeMock)
 		te.children = new HashMap<String,Ls>() // Reset the number of Language Sections
-		te.populate(nodeMock as Proxy.Node, ["customerSubset":"My customer", "projectSubset":"The running project"])
+		te.populate(nodeMock as Proxy.Node, ["customerSubset":"My customer", "projectSubset":"The running project"],'Transportation')
 		// Language Sections
 		assertEquals 1, te.children.size()
 		assertEquals true , te.children.containsKey(TeFactory.ID+"_"+Constants.LsMode.CONCEPT.toString())
 		// Informations Units
-		assertEquals 5, te.informationUnits.size
+		assertEquals 6, te.informationUnits.size
 		Iu iuId = new Iu("entryIdentifier","string",TeFactory.ID)
 		assertEquals true , te.informationUnits.contains(iuId)
 		Iu iuCustomer = new Iu("customerSubset","string","My customer")
@@ -123,6 +123,8 @@ class TestTe {
 		assertEquals true , te.informationUnits.contains(iuDefinition)
 		Iu iuContext = new Iu("context","string","I have two cars.")
 		assertEquals true , te.informationUnits.contains(iuContext)
+		Iu iuSubjectField = new Iu("subjectField","string","Transportation")
+		assertEquals true , te.informationUnits.contains(iuSubjectField)
 	}
 	
 	@Test
@@ -135,7 +137,7 @@ class TestTe {
 		replay(nodeMock)
 		te.children = new HashMap<String,Ls>() // Reset the Language Sections
 		te.sasForTe = ["entryIdentifier":"BPOCE"] // Reset the Standard Attributes
-		te.populate(nodeMock as Proxy.Node, ["customerSubset":"My customer", "projectSubset":"The running project","sourceLanguage":"en","targetLanguage":"fr"])
+		te.populate(nodeMock as Proxy.Node, ["customerSubset":"My customer", "projectSubset":"The running project","sourceLanguage":"en","targetLanguage":"fr"], '')
 		// Language Sections
 		assertEquals 2, te.children.size()
 		assertEquals true , te.children.containsKey(TeFactory.ID+"_"+Constants.LsMode.SOURCE.toString())

@@ -1,4 +1,4 @@
-package tmf;
+package tmf
 
 import static org.junit.Assert.*
 
@@ -47,9 +47,9 @@ class TestLs {
 	@Test
 	public final void testAddTs() {
 		ls.add(TsFactory.getTestTs())
-		assertEquals(ls.children.size(), 1)
-		assertEquals(ls.children.containsKey(TsFactory.ID), true)
-		assertEquals(ls.children[TsFactory.ID].class.name, "tmf.Ts")
+		assertEquals 1, ls.children.size()
+		assertEquals true, ls.children.containsKey(TsFactory.ID)
+		assertEquals "tmf.Ts", ls.children[TsFactory.ID].class.name
 	}
 
 	@Test
@@ -68,11 +68,11 @@ class TestLs {
 		expect(nodeMock.getPlainText()).andReturn("car").anyTimes()
 		replay(nodeMock)
 		ls.populate(nodeMock as Proxy.Node, ["objectLanguage":"en-GB"], Constants.LsMode.CONCEPT)
-		assertEquals(ls.informationUnits.size(), 1)
-		assertEquals(ls.informationUnits[0].class.name, "tmf.Iu")
-		assertEquals(ls.informationUnits[0].dataCategory,"objectLanguage")
-		assertEquals(ls.informationUnits[0].type,"string")
-		assertEquals(ls.informationUnits[0].value,"en-GB")
+		assertEquals 1, ls.informationUnits.size()
+		assertEquals "tmf.Iu", ls.informationUnits[0].class.name
+		assertEquals "objectLanguage", ls.informationUnits[0].dataCategory
+		assertEquals "string", ls.informationUnits[0].type
+		assertEquals "en-GB", ls.informationUnits[0].value
 	}
 	@Test
 	public final void testPopulateSource() {
@@ -83,11 +83,11 @@ class TestLs {
 		expect(nodeMock.getDetails()).andReturn(new Convertible("A car is an automotive vehicle.")).anyTimes()
 		replay(nodeMock)
 		ls.populate(nodeMock as Proxy.Node, ["sourceLanguage":"en"], Constants.LsMode.SOURCE)
-		assertEquals(ls.informationUnits.size(), 1)
-		assertEquals(ls.informationUnits[0].class.name, "tmf.Iu")
-		assertEquals(ls.informationUnits[0].dataCategory,"objectLanguage")
-		assertEquals(ls.informationUnits[0].type,"string")
-		assertEquals(ls.informationUnits[0].value,"en")
+		assertEquals 1, ls.informationUnits.size()
+		assertEquals "tmf.Iu", ls.informationUnits[0].class.name
+		assertEquals "objectLanguage", ls.informationUnits[0].dataCategory
+		assertEquals "string", ls.informationUnits[0].type
+		assertEquals "en", ls.informationUnits[0].value
 	}
 	@Test
 	public final void testPopulateTarget() {
