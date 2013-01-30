@@ -73,8 +73,11 @@ class Gis extends Sn {
 				}
 			}	
 		}
-		
+		// filename has precedence over fileIdentifier attribute
 		if (this.filename){
+			if (attributesForGis.containsKey("fileIdentifier")){
+				LogUtils.info(this.class.name+'	 The value of the attribute fileIdentifier has been ignored because the filename has been defined.')
+			}
 			attributesForGis.put("fileIdentifier", this.filename)
 		}
 		this.filename = attributesForGis["fileIdentifier"]

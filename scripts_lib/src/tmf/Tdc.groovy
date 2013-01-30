@@ -13,6 +13,7 @@ import org.freeplane.plugin.script.proxy.Proxy
 
 import static Constants
 
+
 /**
  * A Terminological Data Collection contains information on concepts of specific subject fields
  * It is the root of a glossary, as described in ISO 16642
@@ -61,6 +62,7 @@ class Tdc extends Sn {
 	 */
 	void populate(Proxy.Node rootNode) {
 		tovaNames.addAll(["customerSubset","languageID","objectLanguage", "projectSubset", "sourceLanguage", "targetLanguage"])
+		String subjectField="" // Root subject of the terminology database, if any.
 		if (rootNode.attributes.size() > 0) {
 			for (int i in 0..rootNode.attributes.size()-1) {
 				def attributeName = rootNode.attributes.getNames()[i]
@@ -69,10 +71,15 @@ class Tdc extends Sn {
 						LogUtils.info(this.class.name+'	In root node \"' + rootNode.plainText + '\", there is a new attribute: ' + attributeName + '. Its value is: ' + rootNode.attributes.getValues()[i].toString() +'.' )
 						tovasForTdc.put(attributeName, rootNode.attributes.getValues()[i].toString())
 				}
+				
+				if (attributeName=="subjectField"){
+					subjectField=rootNode.attributes.getFirst(attributeName).toString()
+					LogUtils.info(this.class.name+'	In root node \"' + rootNode.plainText + '\", there is a new attribute: ' + attributeName + '. Its value is: ' + rootNode.attributes.getFirst(attributeName).toString() +'.' )
+				}
 			}
 		}
 		globalInformationSection.populate(rootNode, tovasForTdc)
-		this.recursivePopulate(rootNode, tovasForTdc)
+		this.recursivePopulate(rootNode, tovasForTdc, subjectField)
 	}
 	/**
 	 * Sets the filename of the Terminological Data Collection.
@@ -86,13 +93,14 @@ class Tdc extends Sn {
 	 * Create a collection of the <code>Te</code> according to the children nodes of the glossary root node in the Freeplane map, and populate them.
 	 * Data is read from the root node of the glossary in the Freeplane map.
 	 * Usually, this node is the root node of the map itself (One glossary per map).
-	 * The recursion goes through nodes the style of which is either <code>Concept</code>, <code>Field</code> or <code>Term</code>.
+	 * The recursion goes through nodes the style of which is either <code>Concept</code> or <code>Term</code>.
 	 * A Terminological Entry is created for each valid <code>Concept</code> node.
 	 * @param node The root node of the glossary in the Freeplane map.
 	 * @param tovas The map node of Transitive OVerwritable Attributes. Keys of the map entries are attribute names.
+	 * @param subjectField The value of the parent subjectField.
 	 * @see tmf.Te
 	 */
-	def private recursivePopulate(Proxy.Node node, Map<String,String> tovas) {	
+	def private recursivePopulate(Proxy.Node node, Map<String,String> tovas, String subjectField) {	
 		if (node.style.name=="Concept" && node.plainText.length()>0){
 			if(node.plainText.substring(node.plainText.length() - 1)=="="){
 				LogUtils.info(this.class.name+'	The Terminological Entry \"'+node.plainText+'\" is ignored because the last character is equal.')
@@ -100,15 +108,16 @@ class Tdc extends Sn {
 			else{
 				def te = new Te(node.id)
 				LogUtils.info(this.class.name+'	Adding the Terminological Entry: \"'+node.plainText+'\".')
-				te.populate(node, tovas)
+				te.populate(node, tovas, subjectField)
 				this.add(te)
 			}
 		}
 		node.children.each {
 			def childNode = it
-			if ((childNode.style.name=="Concept") || (childNode.style.name=="Field") || (childNode.style.name=="Term")){
+			if ((childNode.style.name=="Concept") || (childNode.style.name=="Term")){
 				def Map<String,String> childTovas = new HashMap<String,String>()
 				childTovas=tovas.clone()
+				String childSubjectField=subjectField
 				if (childNode.attributes.size() > 0) {
 					def nodePlainText= childNode.plainText
 					for (int i in 0..childNode.attributes.size()-1) {
@@ -125,9 +134,21 @@ class Tdc extends Sn {
 								childTovas.put(attributeName, childNode.attributes.getValues()[i].toString())
 							}
 						}
+						if (attributeName=="subjectField") {
+							String attributeValue=childNode.attributes.getFirst(attributeName)
+							// The subjectField attributes shall be concatenated if it starts with a +
+							if (attributeValue[0]=="+") {
+								childSubjectField=childSubjectField+Config.get('pangloss_field_separator')+childNode.attributes.getFirst(attributeName).toString().substring(1)
+								LogUtils.info(this.class.name+'	In node \"' + nodePlainText + '\", the value of ' + attributeName + ' is changed from ' + childNode.attributes.getFirst(attributeName).toString() + ' to ' + childSubjectField + '.' )
+							} else {
+								childSubjectField=childNode.attributes.getFirst(attributeName).toString()
+								LogUtils.info(this.class.name+'	In node \"' + nodePlainText + '\", the value of ' + attributeName + ' is ' + childSubjectField +'.' )
+
+							}
+						}
 					}
 				}
-				this.recursivePopulate(it, childTovas)
+				this.recursivePopulate(it, childTovas,childSubjectField)
 			
 			}
 		}

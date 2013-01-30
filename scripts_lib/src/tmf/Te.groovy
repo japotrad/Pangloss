@@ -97,7 +97,7 @@ class Te extends Sn {
 	 * @see tmf.Iu
 	 * @see tmf.Ls
 	 */
-	def populate(Proxy.Node node, Map<String,String> tovas) {
+	def populate(Proxy.Node node, Map<String,String> tovas, String subjectField) {
 		if (this.id) {
 			sasForTe.put("entryIdentifier", this.id)
 		}
@@ -144,5 +144,11 @@ class Te extends Sn {
 				LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the Information Unit: '+key+', string, '+value)
 				this.add(iu)
 		}
+		if (subjectField !=""){
+			def iu = new Iu("subjectField","string", subjectField)
+			LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the Information Unit: subjectField, string, '+subjectField)
+			this.add(iu)
+		}
+		
 	}
 }
