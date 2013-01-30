@@ -85,7 +85,7 @@ class TestGis {
 		assertEquals true, gis.attributesForGis.containsKey("customerSubset")
 		assertEquals "my customer", gis.attributesForGis["customerSubset"]
 		assertEquals true, gis.attributesForGis.containsKey("fileIdentifier")
-		assertEquals "Termbase", gis.attributesForGis["fileIdentifier"] // fileIdentifier attribute has precedence over node name
+		assertEquals "FILENAME", gis.attributesForGis["fileIdentifier"] // filename has precedence over fileIdentifier attribute
 		assertEquals true, gis.attributesForGis.containsKey("languageID")
 		assertEquals "en-US", gis.attributesForGis["languageID"]
 		assertEquals true, gis.attributesForGis.containsKey("objectLanguage")
@@ -97,13 +97,12 @@ class TestGis {
 		assertEquals true, gis.attributesForGis.containsKey("targetLanguage")
 		assertEquals "fr", gis.attributesForGis["targetLanguage"]
 		
-		// fileIdentifier attribute has precedence over node name
-		assertEquals  "Termbase", gis.filename
+		assertEquals  "FILENAME", gis.filename
 		
 		// Informations Units
 		assertEquals 7, gis.informationUnits.size()
-		assertEquals true , gis.informationUnits.contains(new Iu("customerSubset","string","my customer"))
-		assertEquals true , gis.informationUnits.contains(new Iu("fileIdentifier", "string", "Termbase"))
+		assertEquals true , gis.informationUnits.contains(new Iu("customerSubset","string", "my customer"))
+		assertEquals true , gis.informationUnits.contains(new Iu("fileIdentifier", "string", "FILENAME"))
 		assertEquals true , gis.informationUnits.contains(new Iu("languageID", "string", "en-US"))
 		assertEquals true , gis.informationUnits.contains(new Iu("objectLanguage", "string", "en-GB"))
 		assertEquals true , gis.informationUnits.contains(new Iu("projectSubset", "string", "my project"))
@@ -135,7 +134,7 @@ class TestGis {
 		assertEquals true, gis.attributesForGis.containsKey("customerSubset")
 		assertEquals "my customer", gis.attributesForGis["customerSubset"]
 		assertEquals true, gis.attributesForGis.containsKey("fileIdentifier")
-		assertEquals "Termbase", gis.attributesForGis["fileIdentifier"] // fileIdentifier attribute has precedence over node name
+		assertEquals "FILENAME", gis.attributesForGis["fileIdentifier"] // filename has precedence over fileIdentifier attribute
 		assertEquals true, gis.attributesForGis.containsKey("languageID")
 		assertEquals "en-US", gis.attributesForGis["languageID"]
 		assertEquals true, gis.attributesForGis.containsKey("objectLanguage")
@@ -147,13 +146,12 @@ class TestGis {
 		assertEquals true, gis.attributesForGis.containsKey("targetLanguage")
 		assertEquals "fr", gis.attributesForGis["targetLanguage"]
 		
-		// fileIdentifier attribute has precedence over node name
-		assertEquals  "Termbase", gis.filename
+		assertEquals  "FILENAME", gis.filename
 		
 		// Informations Units
 		assertEquals 7, gis.informationUnits.size()
-		assertEquals true , gis.informationUnits.contains(new Iu("customerSubset","string","my customer"))
-		assertEquals true , gis.informationUnits.contains(new Iu("fileIdentifier", "string", "Termbase"))
+		assertEquals true , gis.informationUnits.contains(new Iu("customerSubset","string", "my customer"))
+		assertEquals true , gis.informationUnits.contains(new Iu("fileIdentifier", "string", "FILENAME"))
 		assertEquals true , gis.informationUnits.contains(new Iu("languageID", "string", "en-US"))
 		assertEquals true , gis.informationUnits.contains(new Iu("objectLanguage", "string", "en-GB"))
 		assertEquals true , gis.informationUnits.contains(new Iu("projectSubset", "string", "my project"))
@@ -181,10 +179,10 @@ class TestGis {
 		gis.populate(nodeMock as Proxy.Node, [:])
 
 		assertEquals true, gis.attributesForGis.containsKey("fileIdentifier")
-		assertEquals "My Glossary", gis.attributesForGis["fileIdentifier"] // fileIdentifier attribute has precedence over node name
-		assertEquals "My Glossary", gis.filename
+		assertEquals "FILENAME", gis.attributesForGis["fileIdentifier"] // filename has precedence over fileIdentifier attribute
+		assertEquals "FILENAME", gis.filename
 		assertEquals 1, gis.informationUnits.size()
-		assertEquals true , gis.informationUnits.contains(new Iu("fileIdentifier", "string", "My Glossary"))	
+		assertEquals true , gis.informationUnits.contains(new Iu("fileIdentifier", "string", "FILENAME"))	
 	}
 	@Test
 	public final void testToGmt() {
