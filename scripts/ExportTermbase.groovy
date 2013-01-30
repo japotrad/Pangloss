@@ -1,5 +1,6 @@
 // @ExecutionModes({ON_SINGLE_NODE})
 import tmf.Tdc
+import tmf.Config
 
 import org.freeplane.core.ui.components.UITools
 import org.freeplane.core.ui.ExampleFileFilter
@@ -41,7 +42,6 @@ import javax.xml.transform.stream.StreamResult
 import javax.xml.transform.stream.StreamSource
 import javax.xml.transform.OutputKeys
 import javax.xml.transform.Transformer
-
 
 
 /**
@@ -234,7 +234,19 @@ private class FileChooserAccessory extends JPanel implements PropertyChangeListe
 	  }
 	}
 }
+def setConfig(){
+	//Set the configuration for tmf package
+	String pangloss_field_separator
+	if (config.getProperty('pangloss_field_separator')) {
+		pangloss_field_separator = config.getProperty('pangloss_field_separator')
+	} else {
+		pangloss_field_separator = '>'
+	}
+	Config.set('pangloss_field_separator', pangloss_field_separator)
+	LogUtils.info('ExportTermbase	Adding the configuration parameter pangloss_field_separator, '+pangloss_field_separator)
+}
 def run(Proxy.Node node, Proxy.Controller c){
+	setConfig()
 	File configFile=new File(c.getUserDirectory().toString()+File.separator +'pangloss'+File.separator +'export.properties')
 	ConfigSlurper cfgs=new ConfigSlurper()
 	ConfigObject cfgo=new ConfigObject()
