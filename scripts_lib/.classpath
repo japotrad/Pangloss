@@ -14,7 +14,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/freeplane_plugin_script_test"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/freeplane_plugin_svg"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/freeplane_plugin_uispec4j"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/freeplane_uitest"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/JOrtho_0.4_freeplane"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="/xmlunit-1.3/lib/xmlunit-1.3.jar"/>
