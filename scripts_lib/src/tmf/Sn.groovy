@@ -29,6 +29,12 @@ class Sn {
 	 */
 	protected String id
 	/**
+	 * <code>relationships</code> is the a link to another Structural Node.
+	 * e.g. a concept (i.e. Terminological Entry) may reference a broader concept.
+	 * @see tmf.Rel
+	 */
+	protected List<Rel> relationships = new ArrayList<Rel>()
+	/**
 	 * <code>informationUnits</code> is the content of the object.
 	 * e.g. a definition attached to a Terminological Entry.
 	 * An instance of an Information Unit is attached to one and only one Structural Node.
@@ -42,10 +48,9 @@ class Sn {
 	protected  Map<String,Sn> children = new HashMap<String,Sn>()
 	
 	/**
-	 * Tests whether two Structural Nodes are equal.
-	 * @param obj The equality operand
-	 * @return True if the two Structural Nodes are equal, false otherwise.
-	 */
+	 * <code>children</code> is the list of Structural Nodes which depend upon the current object. Keys of the map entries are ids of the Structural Nodes objects.
+	*/
+
 	@Override
 	public boolean equals(Object obj) {
 	
@@ -56,10 +61,10 @@ class Sn {
 		Sn sn = (Sn) obj
 		boolean mainComparison =(id == sn.id || (id != null && id.equals(sn.id)))
 		
-		if ((informationUnits.size()==0) && (sn.informationUnits.size()==0) && (children.size()==0) && (sn.children.size()==0)) {
+		if ((relationships.size()==0) && (sn.relationships.size()==0) && (informationUnits.size()==0) && (sn.informationUnits.size()==0) && (children.size()==0) && (sn.children.size()==0)) {
 			return mainComparison
 		}
-		if ( mainComparison == false || informationUnits.size()!=sn.informationUnits.size() || children.size()!=sn.children.size() ) {
+		if ( mainComparison == false || relationships.size()!=sn.relationships.size() || informationUnits.size()!=sn.informationUnits.size() || children.size()!=sn.children.size() ) {
 			return false
 		}
 		// The order of the Information Units is not significant.
@@ -71,7 +76,17 @@ class Sn {
 		}
 		if ( mainComparison == false) {
 			return false
-		}	
+		}
+		// The order of the Relationships is not significant.
+		relationships.each{
+			// The contain method calls the equals method of tmf.Rel
+			if (sn.relationships.contains(it)==false) {
+				mainComparison = false
+			}
+		}
+		if ( mainComparison == false) {
+			return false
+		}
 		children.each{k, v-> 
 			// The contain method calls the equals method recursively.
 			if (sn.children.containsKey(k)==false) {
@@ -83,7 +98,14 @@ class Sn {
 		}
 		return mainComparison
 	}
-	
+	/**
+	 * Adds a Relationship starting from the current object.
+	 * @param rel The Relationship object
+	 * @see tmf.Rel
+	 */
+	def add(Rel rel) {
+		relationships.add(rel)
+	}
 	/**
 	 * Adds an Information Unit as content of the current object.
 	 * @param iu The content Information Unit object
