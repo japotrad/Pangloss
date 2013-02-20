@@ -43,7 +43,28 @@ class TestSn {
 		assertEquals "java.lang.String", sn.id.class.name
 		assertEquals "auie,ctsrn", sn.id
 	}
-
+	@Test
+	public final void testAddRel() {
+		Rel rel = new Rel("semantic","target")
+		Sn sn = new Sn("auie,ctsrn")
+		
+		sn.add(rel)
+		assertEquals 1, sn.relationships.size()
+		assertEquals "tmf.Rel", sn.relationships[0].class.name
+		assertEquals "semantic", sn.relationships[0].semantic
+		assertEquals "target", sn.relationships[0].target
+		
+		Rel rel2 = new Rel("semantic2","target2")
+		sn.add(rel2)
+		assertEquals 2, sn.relationships.size()
+		assertEquals "tmf.Rel", sn.relationships[0].class.name
+		assertEquals "semantic", sn.relationships[0].semantic
+		assertEquals "target", sn.relationships[0].target
+		
+		assertEquals "tmf.Rel", sn.relationships[1].class.name
+		assertEquals "semantic2", sn.relationships[1].semantic
+		assertEquals "target2", sn.relationships[1].target
+		}
 	@Test
 	public final void testAddIu() {
 		Iu iu = new Iu("datacategory","string","value")
@@ -98,6 +119,30 @@ class TestSn {
 		assertEquals false, snNull.equals(new Sn("id"))
 		assertEquals false, snNull.equals(new Sn())
 	}
+	
+	@Test
+	public final void testEqualsRel() {
+		Sn sn = new Sn("id")
+		Rel rel = new Rel("semantic","target")
+		sn.add(rel)
+		Sn sn2 = new Sn("id")
+		Rel rel2 = new Rel("semantic2","target2")
+		assertEquals false, sn.equals(sn2)
+		assertEquals false, sn2.equals(sn)
+		
+		sn2.add(rel2)
+		assertEquals false, sn.equals(sn2)
+		assertEquals false, sn2.equals(sn)
+		
+		sn2.add(rel)
+		assertEquals false, sn.equals(sn2)
+		assertEquals false, sn2.equals(sn)
+		
+		sn.add(rel2)
+		assertEquals true, sn.equals(sn2)
+		assertEquals true, sn2.equals(sn)
+	}
+	
 	@Test
 	public final void testEqualsIu() {
 		Sn sn = new Sn("id")
