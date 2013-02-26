@@ -62,6 +62,7 @@ class Te extends Sn {
 	def toGmt(MarkupBuilder xml) {
 		xml.struct(type:"TE"){
 			this.informationUnits.each { iu -> iu.toGmt(xml, tovasForTe)}
+			this.relationships.each { rel -> rel.toGmt(xml)}
 			// Output the Language Section.
 			// Output the source Language Section first (if any).
 			// Then, output the target Language Section (if any).
@@ -149,6 +150,26 @@ class Te extends Sn {
 			LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the Information Unit: subjectField, string, '+subjectField)
 			this.add(iu)
 		}
-		
+		// Relationship to parent node
+		if (node.parent.style.name=="Concept") {
+			String semantic ="superordinateConceptGeneric"
+			if (node.icons.contains("gohome"))	{
+				semantic ="superordinateConceptPartitive"
+			}
+			add(new Rel(semantic, node.parent))
+			LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the ' + semantic + ' relationship to the parent node.')
+		}
+		// Relationship to children nodes
+		node.children.each {
+			def childNode = it
+			if (childNode.style.name=="Concept") {
+				String semantic ="subordinateConceptGeneric"
+				if (childNode.icons.contains("gohome"))	{
+					semantic ="subordinateConceptPartitive"
+				}
+				add(new Rel(semantic, childNode))
+				LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the ' + semantic + ' relationship to the ' + childNode.plainText+ ' child node.')
+			}
+		}
 	}
 }
