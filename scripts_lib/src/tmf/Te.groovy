@@ -156,7 +156,7 @@ class Te extends Sn {
 			if (node.icons.contains("gohome"))	{
 				semantic ="superordinateConceptPartitive"
 			}
-			add(new Rel(semantic, node.parent))
+			add(new Rel(semantic, node.parent.id))
 			LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the ' + semantic + ' relationship to the parent node.')
 		}
 		// Relationship to children nodes
@@ -167,7 +167,7 @@ class Te extends Sn {
 				if (childNode.icons.contains("gohome"))	{
 					semantic ="subordinateConceptPartitive"
 				}
-				add(new Rel(semantic, childNode))
+				add(new Rel(semantic, childNode.id))
 				LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the ' + semantic + ' relationship to the ' + childNode.plainText+ ' child node.')
 			}
 		}
