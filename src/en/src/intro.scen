@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:section xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:title>
+			<sc:fullTitle>Introduction</sc:fullTitle>
+		</dk:title>
+		<sp:content>
+			<dk:content>
+				<sp:infobloc>
+					<dk:sTitle>
+						<sc:fullTitle>First Map</sc:fullTitle>
+					</dk:sTitle>
+					<dk:flowAll>
+						<sp:fig sc:refUri="/res/freeplaneMap/map.mWeb"/>
+						<sp:fig sc:refUri="/res/flash/map.scr.swf"/>
+					</dk:flowAll>
+				</sp:infobloc>
+			</dk:content>
+		</sp:content>
+	</dk:section>
+</sc:item>

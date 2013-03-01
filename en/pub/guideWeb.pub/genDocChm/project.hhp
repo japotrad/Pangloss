@@ -1,0 +1,40 @@
+
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=help.chm
+Contents file=toc.hhc
+Default topic=co/intro.html
+Display compile progress=No
+Full-text search=Yes
+Language=0x40c Français (France)
+Title=Pangloss user guide
+
+[FILES]
+skin\img\tpl\tplHomeCo_b.png
+skin\img\tpl\tplHomeTp_b.png
+skin\img\tpl\tplHomeTp_r.png
+skin\img\int\advice.gif
+skin\img\int\complement.gif
+skin\img\int\example.gif
+skin\img\int\legal.gif
+skin\img\int\note.gif
+skin\img\int\tip.gif
+skin\img\int\warning.gif
+skin\img\chkButton.gif
+skin\img\key.gif
+skin\img\optButton.gif
+skin\img\zoom.gif
+skin\img\imgZmOverlay.png
+skin\img\subSec.gif
+skin\img\dk\ref_def.png
+skin\img\dk\op.gif
+skin\img\dk\alt.gif
+skin\img\dk\opCom.png
+skin\img\dk\simul.gif
+skin\img\dk\step.png
+skin\img\dk\step2.png
+skin\img\dk\stepExtraClosed.gif
+skin\img\dk\stepExtraOpen.gif
+
+[INFOTYPES]
+	

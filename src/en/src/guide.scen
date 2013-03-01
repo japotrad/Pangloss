@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:userGuide xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:userGuideM>
+			<sp:title>Pangloss user guide</sp:title>
+		</dk:userGuideM>
+		<sp:subSection sc:refUri="/src/intro.scen"/>
+	</dk:userGuide>
+</sc:item>

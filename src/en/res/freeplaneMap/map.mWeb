@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"><dk:mediaWeb xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"><dk:mediaWebMeta><sp:title>First Map</sp:title></dk:mediaWebMeta><sp:unknown><dk:mwUnMeta><sp:align>left</sp:align><sp:frag>&lt;xhtml:script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="./flashobject.js" type="text/javascript"/&gt;
+&lt;xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" id="flashcontent"&gt;
+          Flash plugin or Javascript are turned off.
+          Activate both  and reload to view the mindmap
+&lt;/xhtml:div&gt;
+&lt;xhtml:script xmlns:xhtml="http://www.w3.org/1999/xhtml" type="text/javascript"&gt;
+          var fo = new FlashObject("./visorFreeplane.swf", "visorFreeplane", "100%", "100%", 8);
+          fo.addParam("quality", "high");
+          fo.addVariable("bgcolor", 0xffffff);
+          fo.addVariable("openUrl", "_blank");
+          fo.addVariable("initLoadFile", "./map.mm");
+          fo.addVariable("startCollapsedToLevel","2");
+          fo.write("flashcontent");
+&lt;/xhtml:script&gt;
+&lt;xhtml:img xmlns:xhtml="http://www.w3.org/1999/xhtml" style="visibility: hidden;" src="./visorFreeplane.swf"/&gt;
+&lt;xhtml:img xmlns:xhtml="http://www.w3.org/1999/xhtml" style="visibility: hidden;" src="./flashobject.js"/&gt;
+&lt;xhtml:img xmlns:xhtml="http://www.w3.org/1999/xhtml" style="visibility: hidden;" src="./map.mm"/&gt;</sp:frag></dk:mwUnMeta></sp:unknown></dk:mediaWeb></sc:item>
