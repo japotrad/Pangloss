@@ -3,8 +3,8 @@
             classname="org.codehaus.groovy.ant.Groovydoc"/>
 
    <target name="generategroovydoc" description="Generate Groovydoc-based documentation">
-      <groovydoc destdir="."
-                 sourcepath="../src"
+      <groovydoc destdir="./doc"
+                 sourcepath="./src"
                  packagenames="**.*"
                  use="true"
                  windowtitle="Pangloss Source Code Documentation"
@@ -17,4 +17,4 @@
          <link packages="groovy.,org.codehaus.groovy."   href="http://groovy.codehaus.org/api/"/>
       </groovydoc>
    </target>
-	</project>
+</project>
