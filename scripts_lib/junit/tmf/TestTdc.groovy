@@ -20,6 +20,11 @@ import static org.easymock.IMocksControl.*
 import org.freeplane.plugin.script.proxy.Proxy // Mocked
 import org.freeplane.plugin.script.proxy.Convertible
 
+import pangloss.tmf.Ci;
+import pangloss.tmf.Gis;
+import pangloss.tmf.Tdc;
+import pangloss.tmf.Te;
+
 public class TdcFactory {
 	public static ID = "TDC_ID"
 	public static Gis GLOBALINFORMATIONSECTION = new Gis()

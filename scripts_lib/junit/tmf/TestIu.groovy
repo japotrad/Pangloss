@@ -12,6 +12,8 @@ import org.junit.Test
 import groovy.xml.MarkupBuilder
 import org.custommonkey.xmlunit.Diff
 
+import pangloss.tmf.Iu;
+
 class TestIu {
 
 	@BeforeClass

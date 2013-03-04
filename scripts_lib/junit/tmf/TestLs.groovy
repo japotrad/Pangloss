@@ -16,6 +16,8 @@ import static org.easymock.IMocksControl.*
 import org.freeplane.plugin.script.proxy.Proxy // Mocked
 import org.freeplane.plugin.script.proxy.Convertible
 
+import pangloss.tmf.Ls;
+
 public class LsFactory {
 	public static final String ID = "123"
 	public static Ls getTestLs(){

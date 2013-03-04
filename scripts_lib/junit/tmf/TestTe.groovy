@@ -19,6 +19,10 @@ import static org.easymock.IMocksControl.*
 import org.freeplane.plugin.script.proxy.Proxy // Mocked
 import org.freeplane.plugin.script.proxy.Convertible
 
+import pangloss.tmf.Iu;
+import pangloss.tmf.Ls;
+import pangloss.tmf.Te;
+
 public class TeFactory {
 	public static final String ID = "12BPOCE"
 	public static final Map<String,Ls> LANGUAGESECTIONS = new HashMap<String,Ls>()

@@ -20,6 +20,10 @@ import static org.easymock.IMocksControl.*
 import org.freeplane.plugin.script.proxy.Proxy // Mocked
 import org.freeplane.plugin.script.proxy.Convertible
 
+import pangloss.tmf.Gis;
+import pangloss.tmf.Iu;
+import pangloss.tmf.Ls;
+
 public class GisFactory {
 	public static String ID = "GIS_ID"
 	public static List<String> ATTRIBUTENAMESFORGIS= new ArrayList<String>()

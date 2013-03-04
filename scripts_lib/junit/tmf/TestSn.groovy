@@ -9,6 +9,10 @@ import org.junit.Before
 import org.junit.BeforeClass
 import org.junit.Test
 
+import pangloss.tmf.Iu;
+import pangloss.tmf.Rel;
+import pangloss.tmf.Sn;
+
 import static org.hamcrest.CoreMatchers.*
 
 

@@ -16,6 +16,9 @@ import static org.easymock.IMocksControl.*
 import org.freeplane.plugin.script.proxy.Proxy // Mocked
 import org.freeplane.plugin.script.proxy.Convertible
 
+import pangloss.tmf.Iu;
+import pangloss.tmf.Ts;
+
 public class TsFactory {
 	public static final String ID = "12BPO"
 	public static Ts getTestTs(){

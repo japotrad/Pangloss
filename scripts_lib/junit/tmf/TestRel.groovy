@@ -8,6 +8,9 @@ import org.junit.Before
 import org.junit.BeforeClass
 import org.junit.Test
 
+import pangloss.tmf.Rel;
+import pangloss.tmf.Sn;
+
 class TestRel {
 
 	@BeforeClass
