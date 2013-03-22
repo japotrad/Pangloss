@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences_structure>
+	<tabbed_pane>
+		<tab name="pangloss">
+			<separator name="gmt2tsv">
+				<string name="pangloss_gmt2tsv_languages" />
+				<boolean name="pangloss_gmt2tsv_header_row" />
+				<string name="pangloss_gmt2tsv_separator_for_synonyms" />
+				<string name="pangloss_gmt2tsv_attributes_for_synonyms" />
+				<string name="pangloss_gmt2tsv_col_separator" />
+				<boolean name="pangloss_gmt2tsv_windows_eol" />
+				<boolean name="pangloss_gmt2tsv_eol_at_eof" />
+			</separator>
+		</tab>
+	</tabbed_pane>
+</preferences_structure>
