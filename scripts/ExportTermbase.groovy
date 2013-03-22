@@ -41,63 +41,6 @@ import javax.xml.transform.OutputKeys
 import javax.xml.transform.Transformer
 
 
-/**
- * A FileChooserAccessory defines the GUI to the right of the file viewer panel of the file chooser dialog.
- * A <code>Parameter</code> button is displayed if the selected file filter needs parameters.
- * @author Stephane Aubry
- */
-private class FileChooserAccessory extends JPanel implements PropertyChangeListener {
-	/**
-	 * <code>fileChooser</code> is the dialog to which the <code>FileChooserAccessory</code> applies.
-	 */
-	JFileChooser fileChooser
-	/**
-	 * Creates a FileChooser Accessory object.
-	 * @param fc The FileChooser to which the <code>FileChooserAccessory</code> applies.
-	 * @return The new <code>FileChooserAccessory</code> object
-	 */
-	public FileChooserAccessory(JFileChooser fc) {
-		this.fileChooser=fc
-		fileChooser.addPropertyChangeListener(this)
-		JButton paramButton = new JButton(TextUtils.getText('addons.exportParameterButton','Parameters...'))
-		this.setBorder(BorderFactory.createEmptyBorder(0,10,0,0)) // Add some space to the left of the button
-		switch (fileChooser.getFileFilter() as ExampleFileFilter){
-			case fileChooser.getChoosableFileFilters()[1]: // CSV
-				paramButton.setEnabled(true)
-				break
-			case fileChooser.getChoosableFileFilters()[2]: // TSV
-				  paramButton.setEnabled(true)
-				break
-			default:
-				  paramButton.setEnabled(false)
-		}
-		this.add(Box.createVerticalGlue()) // Push the button to the bottom of the accessory panel
-		this.add(paramButton)
-		BoxLayout layout=new BoxLayout(this,BoxLayout.Y_AXIS)
-		this.setLayout(layout)
-	}
-	/**
-	 * Enable or disable the <code>Parameter</code> button according to the selected file filter.
-	 * @param changeEvent The GUI event of the file chooser dialog causing the interrupt.
-	 */
-	public void propertyChange(PropertyChangeEvent changeEvent) {
-	  String changeName = changeEvent.getPropertyName();
-	  if (changeName.equals(JFileChooser.FILE_FILTER_CHANGED_PROPERTY)) {
-		ExampleFileFilter selectedFilter = (ExampleFileFilter)changeEvent.getNewValue()
-		JButton paramButton = (JButton) this.getComponent(1) // Component # 0 is the glue
-		switch (selectedFilter){
-			case fileChooser.getChoosableFileFilters()[1]: // CSV
-				paramButton.setEnabled(true)
-				break
-			case fileChooser.getChoosableFileFilters()[2]: // TSV
-				paramButton.setEnabled(true)
-				break
-			default:
-				paramButton.setEnabled(false)
-		}
-	  }
-	}
-}
 def setConfig(){
 	//Set the configuration for tmf package
 	String pangloss_field_separator
@@ -167,7 +110,6 @@ def run(Proxy.Node node, Proxy.Controller c){
 		defaultDir=myDocuments.toString()
 	}
 	fileChooser.setSelectedFile(new File(defaultDir+File.separator +defaultFilename))
-	fileChooser.setAccessory(new FileChooserAccessory(fileChooser)) // Link the extra panel on the right
 	int returnVal=fileChooser.showSaveDialog() // The GUI appears
 	if (returnVal != JFileChooser.APPROVE_OPTION) {
 		return
