@@ -185,7 +185,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -288,39 +287,43 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="en" ID="ID_1742695989" CREATED="1354893964447" MODIFIED="1359208784013">
+<node TEXT="en" ID="ID_1742695989" CREATED="1354893964447" MODIFIED="1362843503717">
 <attribute_layout NAME_WIDTH="205" VALUE_WIDTH="191"/>
 <attribute NAME="addons.${name}" VALUE="Pangloss"/>
 <attribute NAME="addons.exportTermbase" VALUE="Export the terms..."/>
 <attribute NAME="addons.exportParameterButton" VALUE="Parameters..."/>
 <attribute NAME="OptionPanel.separator.pangloss" VALUE="Pangloss"/>
+<attribute NAME="OptionPanel.pangloss" VALUE="Pangloss"/>
 <attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="Simple bilingual notation"/>
 <attribute NAME="OptionPanel.pangloss_field_separator" VALUE="S&#xe9;parateur champ / sous-champ"/>
 <node TEXT="OptionPanel.separator.pangloss" ID="ID_575741755" CREATED="1356528677384" MODIFIED="1356528677384"/>
 </node>
-<node TEXT="fr" ID="ID_1609652132" CREATED="1354893964447" MODIFIED="1359208842203">
+<node TEXT="fr" ID="ID_1609652132" CREATED="1354893964447" MODIFIED="1362843474999">
 <attribute_layout NAME_WIDTH="205" VALUE_WIDTH="298"/>
 <attribute NAME="addons.${name}" VALUE="Pangloss"/>
 <attribute NAME="addons.exportTermbase" VALUE="Exporter les termes..."/>
 <attribute NAME="addons.exportParameterButton" VALUE="Param&#xe8;tres..."/>
 <attribute NAME="OptionPanel.separator.pangloss" VALUE="Pangloss"/>
+<attribute NAME="OptionPanel.pangloss" VALUE="Pangloss"/>
 <attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="Notation bilingue simplifi&#xe9;e"/>
 <attribute NAME="OptionPanel.pangloss_field_separator" VALUE="Separator Field / Sub-field"/>
 </node>
-<node TEXT="es" ID="ID_918771512" CREATED="1354893964447" MODIFIED="1357405415745">
-<attribute_layout NAME_WIDTH="205" VALUE_WIDTH="298"/>
+<node TEXT="es" ID="ID_918771512" CREATED="1354893964447" MODIFIED="1362843580353">
+<attribute_layout NAME_WIDTH="318" VALUE_WIDTH="298"/>
 <attribute NAME="addons.${name}" VALUE="Pangloss"/>
 <attribute NAME="addons.exportTermbase" VALUE="Exportar los t\u00e9rminos..."/>
 <attribute NAME="addons.exportParameterButton" VALUE="Par&#xe1;metros..."/>
 <attribute NAME="OptionPanel.separator.pangloss" VALUE="Pangloss"/>
+<attribute NAME="OptionPanel.pangloss" VALUE="Pangloss"/>
 <attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="Notaci&#xf3;n biling&#xfc;e simple"/>
 </node>
-<node TEXT="ja" ID="ID_1059175717" CREATED="1354893964447" MODIFIED="1359209605354">
+<node TEXT="ja" ID="ID_1059175717" CREATED="1354893964447" MODIFIED="1362843605352">
 <attribute_layout NAME_WIDTH="205" VALUE_WIDTH="298"/>
 <attribute NAME="addons.${name}" VALUE="&#x30d1;&#x30f3;&#x30b0;&#x30ed;&#x30b9;"/>
 <attribute NAME="addons.exportTermbase" VALUE="&#x7528;&#x8a9e;&#x3092;&#x30a8;&#x30af;&#x30b9;&#x30dd;&#x30fc;&#x30c8;..."/>
 <attribute NAME="addons.exportParameterButton" VALUE="&#x8a2d;&#x5b9a;..."/>
 <attribute NAME="OptionPanel.separator.pangloss" VALUE="&#x30d1;&#x30f3;&#x30b0;&#x30ed;&#x30b9;"/>
+<attribute NAME="OptionPanel.pangloss" VALUE="&#x30d1;&#x30f3;&#x30b0;&#x30ed;&#x30b9;"/>
 <attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="&#x7c21;&#x5358;&#x306a;&#x30d0;&#x30a4;&#x30ea;&#x30f3;&#x30ac;&#x30eb;&#x8868;&#x8a18;&#x6cd5;"/>
 <attribute NAME="OptionPanel.pangloss_field_separator" VALUE="&#x5206;&#x91ce;&#x30fb;&#x4e0b;&#x4f4d;&#x5206;&#x91ce;&#x306e;&#x9593;&#x306e;&#x8a18;&#x53f7;"/>
 </node>
