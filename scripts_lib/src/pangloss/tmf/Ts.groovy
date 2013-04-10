@@ -89,7 +89,7 @@ class Ts extends Sn {
 		attributes.each{ key, value->
 			if (applicableAttributeNames.contains(key)) {
 				def iu = new Iu(key,"string", value)
-				LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", Language Section '+  lsMode.toString()+', Main term. adding the Information Unit: '+key+', string, '+value)
+				LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", Language Section '+  lsMode.toString()+', Main term. Adding the Information Unit: '+key+', string, '+value)
 				this.add(iu)
 			}
 		}
