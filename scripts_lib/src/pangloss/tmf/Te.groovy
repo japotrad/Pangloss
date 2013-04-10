@@ -153,8 +153,10 @@ class Te extends Sn {
 		// Relationship to parent node
 		if (node.parent.style.name=="Concept") {
 			String semantic ="superordinateConceptGeneric"
-			if (node.icons.contains("gohome"))	{
-				semantic ="superordinateConceptPartitive"
+			if (node.icons.size()>0){
+				if (node.icons.contains("gohome"))	{
+					semantic ="superordinateConceptPartitive"
+				}
 			}
 			add(new Rel(semantic, node.parent.id))
 			LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the ' + semantic + ' relationship to the parent node.')
@@ -164,8 +166,10 @@ class Te extends Sn {
 			def childNode = it
 			if (childNode.style.name=="Concept") {
 				String semantic ="subordinateConceptGeneric"
-				if (childNode.icons.contains("gohome"))	{
-					semantic ="subordinateConceptPartitive"
+				if (node.icons.size()>0){
+					if (childNode.icons.contains("gohome"))	{
+						semantic ="subordinateConceptPartitive"
+					}
 				}
 				add(new Rel(semantic, childNode.id))
 				LogUtils.info(this.class.name+'	In Terminological Entry \"' + node.plainText + '\", adding the ' + semantic + ' relationship to the ' + childNode.plainText+ ' child node.')
