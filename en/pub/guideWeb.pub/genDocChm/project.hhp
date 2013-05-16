@@ -3,7 +3,7 @@
 Compatibility=1.1 or later
 Compiled file=help.chm
 Contents file=toc.hhc
-Default topic=co/intro.html
+Default topic=co/Intro.html
 Display compile progress=No
 Full-text search=Yes
 Language=0x40c Français (France)

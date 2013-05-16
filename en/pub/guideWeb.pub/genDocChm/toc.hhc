@@ -5,5 +5,5 @@
 <meta content="http://scenari-platform.org" name="GENERATOR">
 </HEAD>
 <BODY>
-<OBJECT type="text/site properties"><param value="0x800025" name="Window Styles"><param value="Folder" name="ImageType"></OBJECT><UL><LI><OBJECT type="text/sitemap"><param name="Name" value="Introduction"><param name="Local" value="co/intro.html"></OBJECT></LI></UL></BODY>
+<OBJECT type="text/site properties"><param value="0x800025" name="Window Styles"><param value="Folder" name="ImageType"></OBJECT><UL><LI><OBJECT type="text/sitemap"><param name="Name" value="Intro"><param name="Local" value="co/Intro.html"><param name="ImageNumber" value="1"></OBJECT><UL><LI><OBJECT type="text/sitemap"><param name="Name" value="Input an Entry"><param name="Local" value="co/Intro_1.html"></OBJECT></LI></UL></LI><LI><OBJECT type="text/sitemap"><param name="Name" value="Reference"></OBJECT><UL><LI><OBJECT type="text/sitemap"><param name="Name" value="Supported Features"><param name="Local" value="co/reference.html"></OBJECT></LI></UL></LI></UL></BODY>
 </HTML>
