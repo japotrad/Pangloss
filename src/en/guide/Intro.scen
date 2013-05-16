@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:section xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:title>
+			<sc:fullTitle>Introduction: How to fit a glossary in a mind map</sc:fullTitle>
+			<sc:shortTitle>Intro</sc:shortTitle>
+		</dk:title>
+		<sp:content>
+			<dk:content>
+				<sp:infobloc>
+					<dk:flowAll>
+						<sp:txt>
+							<dk:text>
+								<sc:para xml:space="preserve" sc:id="t3">This section explains how Pangloss lets you create a glossary in a mind mapping editor such as Freeplane. We'll first review the internal organsization of items in Freeplane and in a glossary, then we'll see how to makes the mapping between the two structures.</sc:para>
+							</dk:text>
+						</sp:txt>
+					</dk:flowAll>
+				</sp:infobloc>
+				<sp:def sc:refUri="/concept/fpModel.unit"/>
+				<sp:def sc:refUri="/concept/glossaryModel.unit"/>
+			</dk:content>
+		</sp:content>
+		<sp:subSection>
+			<dk:section>
+				<dk:title>
+					<sc:fullTitle>How to fit a glossary Entry into a mind map node?</sc:fullTitle>
+					<sc:shortTitle>Input an Entry</sc:shortTitle>
+				</dk:title>
+				<sp:content>
+					<dk:content>
+						<sp:op>
+							<dk:stepList>
+								<sp:intro>
+									<dk:comment>
+										<sp:infobloc>
+											<dk:flowAll>
+												<sp:txt>
+													<dk:text>
+														<sc:para xml:space="preserve" sc:id="t49">Here is the guideline to fit a glossary Entry into a mind map node:</sc:para>
+														<sc:orderedList sc:id="t50">
+															<sc:listItem sc:id="t51">
+																<sc:para xml:space="preserve" sc:id="t52">A style is applied to a map node, so that it becomes an glossary Entry. The name of the style is: Entry.</sc:para>
+															</sc:listItem>
+															<sc:listItem sc:id="t54">
+																<sc:para xml:space="preserve" sc:id="t55">The most significant terms are stored in the <sc:uLink role="def" sc:id="t56" sc:refUri="/definition/node core.ref">node core</sc:uLink>.</sc:para>
+															</sc:listItem>
+															<sc:listItem sc:id="t57">
+																<sc:para xml:space="preserve" sc:id="t58">Most Entry and Term features can be stored either in the node <sc:uLink role="def" sc:id="t59" sc:refUri="/definition/node note.ref">note</sc:uLink>, <sc:uLink role="def" sc:id="t60" sc:refUri="/definition/node details.ref">details</sc:uLink> or <sc:uLink role="def" sc:id="t61" sc:refUri="/definition/node attributes.ref">attributes</sc:uLink>.</sc:para>
+															</sc:listItem>
+														</sc:orderedList>
+													</dk:text>
+												</sp:txt>
+											</dk:flowAll>
+										</sp:infobloc>
+									</dk:comment>
+								</sp:intro>
+								<sp:step>
+									<dk:step>
+										<dk:stepM>
+											<sp:ti>
+												<dk:para>
+													<sc:para xml:space="preserve" sc:id="t44">Apply the <sc:inlineStyle role="emphasis">Entry</sc:inlineStyle> style to the node</sc:para>
+												</dk:para>
+											</sp:ti>
+										</dk:stepM>
+										<sp:detail>
+											<dk:comment>
+												<sp:infobloc>
+													<dk:flowAll>
+														<sp:txtRes>
+															<dk:txtRes>
+																<dk:txtResM>
+																	<sp:pos>rgt</sp:pos>
+																</dk:txtResM>
+																<sp:txt>
+																	<dk:text>
+																		<sc:orderedList sc:id="t81">
+																			<sc:listItem sc:id="t82">
+																				<sc:para xml:space="preserve" sc:id="t83">Select the node.</sc:para>
+																			</sc:listItem>
+																			<sc:listItem sc:id="t84">
+																				<sc:para xml:space="preserve" sc:id="t85">In the style drop-down box, select</sc:para>
+																			</sc:listItem>
+																		</sc:orderedList>
+																	</dk:text>
+																</sp:txt>
+																<sp:imgBk sc:refUri="/image/entryStyle.scr.png"/>
+															</dk:txtRes>
+														</sp:txtRes>
+													</dk:flowAll>
+												</sp:infobloc>
+											</dk:comment>
+										</sp:detail>
+										<sp:extras>
+											<dk:comment>
+												<sp:warning>
+													<dk:flowAll>
+														<sp:txt>
+															<dk:text>
+																<sc:para xml:space="preserve" sc:id="t90">The <sc:inlineStyle role="emphasis">Entry</sc:inlineStyle> style has to be defined beforehand. To define a <sc:uLink role="def" sc:id="t91" sc:refUri="/definition/node style.ref">style</sc:uLink>, refer to <sc:uLink sc:id="t92" url="http://freeplane.sourceforge.net/wiki/index.php/Node_styles">Freeplane wiki</sc:uLink>.</sc:para>
+															</dk:text>
+														</sp:txt>
+													</dk:flowAll>
+												</sp:warning>
+											</dk:comment>
+										</sp:extras>
+									</dk:step>
+								</sp:step>
+								<sp:step>
+									<dk:step>
+										<dk:stepM>
+											<sp:ti>
+												<dk:para>
+													<sc:para xml:space="preserve" sc:id="t98">Input the most significant terms in the node core</sc:para>
+												</dk:para>
+											</sp:ti>
+										</dk:stepM>
+										<sp:detail>
+											<dk:comment>
+												<sp:infobloc>
+													<dk:flowAll>
+														<sp:txt>
+															<dk:text>
+																<sc:orderedList sc:id="t101">
+																	<sc:listItem sc:id="t102">
+																		<sc:para xml:space="preserve" sc:id="t100">Double-click the <sc:uLink role="def" sc:id="t104" sc:refUri="/definition/node core.ref">node core</sc:uLink>.</sc:para>
+																	</sc:listItem>
+																	<sc:listItem sc:id="t103">
+																		<sc:para xml:space="preserve">Input the term describing the best the concept you are talking about.</sc:para>
+																	</sc:listItem>
+																	<sc:listItem sc:id="t105">
+																		<sc:para xml:space="preserve">Optionally, if you work mainly with two languages, append an equal <sc:inlineStyle role="emphasis"><sc:inlineStyle role="emphasis"><sc:textLeaf role="label" sc:id="t106">=</sc:textLeaf></sc:inlineStyle></sc:inlineStyle> followed by the appropriate term in the other language.</sc:para>
+																	</sc:listItem>
+																</sc:orderedList>
+															</dk:text>
+														</sp:txt>
+													</dk:flowAll>
+												</sp:infobloc>
+											</dk:comment>
+										</sp:detail>
+										<sp:extras>
+											<dk:comment>
+												<sp:complement>
+													<dk:sTitle>
+														<sc:fullTitle>Conceptual vs. Bilingual Entries</sc:fullTitle>
+													</dk:sTitle>
+													<dk:flowAll>
+														<sp:txt>
+															<dk:text>
+																<sc:para xml:space="preserve" sc:id="t112">If a node core contains no equal character, it is considered as a <sc:inlineStyle role="emphasis" sc:id="t143">Conceptual Entry</sc:inlineStyle>. Such Entry focuses on the concept itself (it may be multilingual). The language to be input in the node core should correspond to the <sc:uLink role="def" sc:id="t128" sc:refUri="/definition/feature/languageID.ref">languageID</sc:uLink> feature.</sc:para>
+																<sc:para xml:space="preserve" sc:id="t144">If a node core contains an equal character, it is considered as a <sc:inlineStyle role="emphasis" sc:id="t145">Bilingual  Entry</sc:inlineStyle>. Such Entry focuses on the term in a primary language called the source language. The language to be input in the node core should correspond to the <sc:uLink role="def" sc:id="t150" sc:refUri="/definition/feature/sourceLanguage.ref">sourceLanguage<sc:uLink role="def" sc:id="t130" sc:refUri="/definition/feature/languageID.ref"/></sc:uLink><sc:uLink role="def" sc:id="t130" sc:refUri="/definition/feature/languageID.ref"/> feature.</sc:para>
+															</dk:text>
+														</sp:txt>
+													</dk:flowAll>
+												</sp:complement>
+												<sp:example>
+													<dk:sTitle>
+														<sc:fullTitle>GNP example</sc:fullTitle>
+													</dk:sTitle>
+													<dk:flowAll>
+														<sp:txtRes>
+															<dk:txtRes>
+																<dk:txtResM>
+																	<sp:pos>rgt</sp:pos>
+																</dk:txtResM>
+																<sp:txt>
+																	<dk:text>
+																		<sc:para xml:space="preserve" sc:id="t154">If you study economics, you are likely to create a <sc:inlineStyle role="alt" sc:id="t155">Gross national product</sc:inlineStyle> conceptual entry.</sc:para>
+																	</dk:text>
+																</sp:txt>
+																<sp:imgBk sc:refUri="/image/gnpConcept.scr.png"/>
+															</dk:txtRes>
+														</sp:txtRes>
+														<sp:txtRes>
+															<dk:txtRes>
+																<dk:txtResM>
+																	<sp:pos>rgt</sp:pos>
+																</dk:txtResM>
+																<sp:txt>
+																	<dk:text>
+																		<sc:para xml:space="preserve" sc:id="t152">If you have to translate into spanish the term "gross national product", you should create the following bilingual entry: <sc:inlineStyle role="alt">Gross national product=Producto Nacional Bruto</sc:inlineStyle></sc:para>
+																	</dk:text>
+																</sp:txt>
+																<sp:imgBk sc:refUri="/image/gnpBi.scr.png"/>
+															</dk:txtRes>
+														</sp:txtRes>
+													</dk:flowAll>
+												</sp:example>
+											</dk:comment>
+										</sp:extras>
+									</dk:step>
+								</sp:step>
+								<sp:step>
+									<dk:step>
+										<dk:stepM>
+											<sp:ti>
+												<dk:para>
+													<sc:para xml:space="preserve" sc:id="t169">Add the features either in the node note, details or attributes.</sc:para>
+												</dk:para>
+											</sp:ti>
+										</dk:stepM>
+										<sp:detail>
+											<dk:comment>
+												<sp:infobloc>
+													<dk:flowAll>
+														<sp:txtRes>
+															<dk:txtRes>
+																<dk:txtResM>
+																	<sp:pos>rgt</sp:pos>
+																</dk:txtResM>
+																<sp:txt>
+																	<dk:text>
+																		<sc:para xml:space="preserve" sc:id="t174">The basic procedure is to add a <sc:uLink role="def" sc:id="t175" sc:refUri="/definition/node attributes.ref">node attribute</sc:uLink> for each feature:</sc:para>
+																		<sc:orderedList sc:id="t176">
+																			<sc:listItem sc:id="t177">
+																				<sc:para xml:space="preserve" sc:id="t188">Right-click the node, and select <sc:textLeaf role="menuPath" sc:id="t178">Edit attribute in-line</sc:textLeaf>. Alternatively, if some attributes are already defined, right-click the attribute area and select <sc:textLeaf role="menuPath" sc:id="t179">New attribute</sc:textLeaf>.</sc:para>
+																			</sc:listItem>
+																			<sc:listItem sc:id="t182">
+																				<sc:para xml:space="preserve" sc:id="t189">In the left column, type the attribute name. It should correspond to the <sc:inlineStyle role="emphasis" sc:id="t249">name</sc:inlineStyle> of the feature you want to add (if it is a Term feature, use the <sc:uLink role="def" sc:id="t196" sc:refUri="/definition/feature/objectLanguage.ref">objectLanguage</sc:uLink> followed by a colon as a prefix).</sc:para>
+																			</sc:listItem>
+																			<sc:listItem sc:id="t208">
+																				<sc:para xml:space="preserve" sc:id="t250">In the right column, type the attribute value. It should correspond to the <sc:inlineStyle role="emphasis" sc:id="t251">value</sc:inlineStyle> of the feature you want to add.</sc:para>
+																			</sc:listItem>
+																		</sc:orderedList>
+																	</dk:text>
+																</sp:txt>
+																<sp:imgBk sc:refUri="/image/newAttribute.scr.png"/>
+															</dk:txtRes>
+														</sp:txtRes>
+													</dk:flowAll>
+												</sp:infobloc>
+											</dk:comment>
+										</sp:detail>
+										<sp:extras>
+											<dk:sTitle>
+												<sc:fullTitle>GNP examples</sc:fullTitle>
+											</dk:sTitle>
+											<dk:comment>
+												<sp:example>
+													<dk:sTitle>
+														<sc:fullTitle>Gross national product conceptual entry</sc:fullTitle>
+													</dk:sTitle>
+													<dk:flowAll>
+														<sp:txtRes>
+															<dk:txtRes>
+																<dk:txtResM>
+																	<sp:pos>rgt</sp:pos>
+																</dk:txtResM>
+																<sp:txt>
+																	<dk:text>
+																		<sc:para xml:space="preserve" sc:id="t218">Let's set the language of the entry and add a definition.</sc:para>
+																	</dk:text>
+																</sp:txt>
+																<sp:imgBk sc:refUri="/image/gnpConcept2.scr.gif"/>
+															</dk:txtRes>
+														</sp:txtRes>
+													</dk:flowAll>
+												</sp:example>
+												<sp:example>
+													<dk:sTitle>
+														<sc:fullTitle>Gross national product bilingual entry</sc:fullTitle>
+													</dk:sTitle>
+													<dk:flowAll>
+														<sp:txtRes>
+															<dk:txtRes>
+																<dk:txtResM>
+																	<sp:pos>lft</sp:pos>
+																</dk:txtResM>
+																<sp:txt>
+																	<dk:text>
+																		<sc:para xml:space="preserve" sc:id="t243">Let's define the source and target locales.</sc:para>
+																	</dk:text>
+																</sp:txt>
+																<sp:imgBk sc:refUri="/image/gnpBi2.scr.png"/>
+															</dk:txtRes>
+														</sp:txtRes>
+														<sp:txt>
+															<dk:text>
+																<sc:para xml:space="preserve" sc:id="t241">Let's define the source and target languages.</sc:para>
+															</dk:text>
+														</sp:txt>
+													</dk:flowAll>
+												</sp:example>
+											</dk:comment>
+										</sp:extras>
+									</dk:step>
+								</sp:step>
+							</dk:stepList>
+						</sp:op>
+						<sp:infobloc>
+							<dk:flowAll>
+								<sp:txt>
+									<dk:text>
+										<sc:para xml:space="preserve" sc:id="t27">The most important thing to remember if you want to use Pangloss is to apply the <sc:inlineStyle role="emphasis">Entry</sc:inlineStyle> <sc:uLink role="def" sc:id="t29" sc:refUri="/definition/node style.ref">style</sc:uLink> to all nodes containing glossary entries. If this style is not defined in your map, just create it yourself.</sc:para>
+										<sc:para xml:space="preserve">For more information about node style, click <sc:uLink sc:id="t28" url="A style is applied to a map node, so that it becomes an glossary Entry. The name of the style is: Entry.">here</sc:uLink>.</sc:para>
+									</dk:text>
+								</sp:txt>
+							</dk:flowAll>
+						</sp:infobloc>
+					</dk:content>
+				</sp:content>
+			</dk:section>
+		</sp:subSection>
+	</dk:section>
+</sc:item>

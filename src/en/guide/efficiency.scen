@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:section xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:title>
+			<sc:fullTitle>How to improve efficiency</sc:fullTitle>
+			<sc:shortTitle>Typing less</sc:shortTitle>
+		</dk:title>
+		<sp:content>
+			<dk:content>
+				<sp:infobloc>
+					<dk:flowAll>
+						<sp:txt>
+							<dk:text>
+								<sc:para xml:space="preserve" sc:id="t3">You will notice that that typing the long features names is time consuming, and that most of your entries share a lot of common features, etc. These issues are addressed in this section. </sc:para>
+							</dk:text>
+						</sp:txt>
+					</dk:flowAll>
+				</sp:infobloc>
+			</dk:content>
+		</sp:content>
+		<sp:subSection>
+			<dk:section>
+				<dk:title>
+					<sc:fullTitle>Abbreviating features names</sc:fullTitle>
+					<sc:shortTitle>Abbreviations</sc:shortTitle>
+				</dk:title>
+			</dk:section>
+		</sp:subSection>
+		<sp:subSection>
+			<dk:section>
+				<dk:title>
+					<sc:fullTitle>Sharing features using inheritance</sc:fullTitle>
+					<sc:shortTitle>Inheritance</sc:shortTitle>
+				</dk:title>
+			</dk:section>
+		</sp:subSection>
+	</dk:section>
+</sc:item>

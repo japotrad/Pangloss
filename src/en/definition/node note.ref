@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:definition xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:definitionMeta>
+			<sp:notion>Node note</sp:notion>
+			<sp:def>
+				<dk:textSimple>
+					<sc:para xml:space="preserve" sc:id="t3">The node note is usually presented as hover text. If you prefer to see them under the <sc:inlineStyle role="emphasis">node details</sc:inlineStyle>, click in the menu <sc:textLeaf role="menuPath" sc:id="t6">View > Notes > Display notes in map</sc:textLeaf>. If you have a large monitor and often need to edit notes, we suggest you set <sc:textLeaf role="menuPath" sc:id="t7">View > Notes > Display note panel</sc:textLeaf>.</sc:para>
+				</dk:textSimple>
+			</sp:def>
+		</dk:definitionMeta>
+	</dk:definition>
+</sc:item>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:definition xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:definitionMeta>
+			<sp:notion>Node core</sp:notion>
+			<sp:def>
+				<dk:textSimple>
+					<sc:para xml:space="preserve" sc:id="t3">The node core is the most important and central part of a node. It cannot be hidden. If the <sc:inlineStyle role="emphasis" sc:id="t6">node style</sc:inlineStyle> is <sc:textLeaf role="label" sc:id="t5">Concept</sc:textLeaf>, then the following rule applies: if the node core contains an equal character, then Pangloss handles it as a <sc:inlineStyle role="emphasis" sc:id="t7">Bilingual Entry</sc:inlineStyle>, else it handles it as a <sc:inlineStyle role="emphasis" sc:id="t8">Conceptual Entry</sc:inlineStyle>.</sc:para>
+				</dk:textSimple>
+			</sp:def>
+		</dk:definitionMeta>
+	</dk:definition>
+</sc:item>

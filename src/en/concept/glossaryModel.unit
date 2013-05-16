@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:concept xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<sp:def>
+			<dk:definition>
+				<dk:definitionMeta>
+					<sp:notion>Glossary/Termbase Model</sp:notion>
+					<sp:def>
+						<dk:textSimple>
+							<sc:para xml:space="preserve" sc:id="t3">A  glossary (or terminological database) can be modelled with a two-level model:</sc:para>
+							<sc:itemizedList sc:id="t6">
+								<sc:listItem sc:id="t7">
+									<sc:para xml:space="preserve" sc:id="t16"><sc:inlineStyle role="emphasis">Entry</sc:inlineStyle>: The glossary usually contains several Entries. An entry typically contains some conceptual information (e.g. definition) and one or several Terms.</sc:para>
+								</sc:listItem>
+								<sc:listItem sc:id="t8">
+									<sc:para xml:space="preserve" sc:id="t17"><sc:inlineStyle role="emphasis">Term</sc:inlineStyle>: A Term expresses the concept in a given language.</sc:para>
+								</sc:listItem>
+							</sc:itemizedList>
+						</dk:textSimple>
+					</sp:def>
+				</dk:definitionMeta>
+			</dk:definition>
+		</sp:def>
+		<sp:desc>
+			<dk:comment>
+				<sp:infobloc>
+					<dk:flowAll>
+						<sp:txtRes>
+							<dk:txtRes>
+								<dk:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</dk:txtResM>
+								<sp:txt>
+									<dk:text>
+										<sc:para xml:space="preserve" sc:id="t10">Let's call <sc:inlineStyle role="emphasis" sc:id="t13">Feature</sc:inlineStyle> any piece of information attached either to an Entry or a Term. The diagram to the right shows a glossary Entry containing two Features, and two Terms. One Term contains one feature and the other Term contains two features. Some Features apply only to Entries. Others apply only to Terms. And some Features may apply both to Entries and Terms.</sc:para>
+									</dk:text>
+								</sp:txt>
+								<sp:imgBk sc:refUri="/image/Glossary.scr.gif"/>
+							</dk:txtRes>
+						</sp:txtRes>
+					</dk:flowAll>
+				</sp:infobloc>
+			</dk:comment>
+		</sp:desc>
+	</dk:concept>
+</sc:item>

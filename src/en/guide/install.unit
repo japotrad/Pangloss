@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:stepList xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:sTitle>
+			<sc:fullTitle>How to install Pangloss</sc:fullTitle>
+		</dk:sTitle>
+		<sp:intro>
+			<dk:comment>
+				<sp:infobloc>
+					<dk:flowAll>
+						<sp:txt>
+							<dk:text>
+								<sc:para xml:space="preserve" sc:id="t3">Pangloss is not an independent application but a <sc:uLink role="def" sc:id="t10" sc:refUri="/definition/freeplane.ref">Freeplane</sc:uLink> add-on. It means that Freeplane needs to be installed prior to Pangloss.</sc:para>
+							</dk:text>
+						</sp:txt>
+					</dk:flowAll>
+				</sp:infobloc>
+			</dk:comment>
+		</sp:intro>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para>
+							<sc:para xml:space="preserve" sc:id="t5">Install Freeplane</sc:para>
+						</dk:para>
+					</sp:ti>
+				</dk:stepM>
+			</dk:step>
+		</sp:step>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para>
+							<sc:para xml:space="preserve" sc:id="t12">Configure the preferences</sc:para>
+						</dk:para>
+					</sp:ti>
+				</dk:stepM>
+			</dk:step>
+		</sp:step>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para>
+							<sc:para xml:space="preserve" sc:id="t14">Install the add-on</sc:para>
+						</dk:para>
+					</sp:ti>
+				</dk:stepM>
+			</dk:step>
+		</sp:step>
+	</dk:stepList>
+</sc:item>

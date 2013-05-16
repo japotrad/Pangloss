@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:definition xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:definitionMeta>
+			<sp:notion>sourceLanguage</sp:notion>
+			<sp:def>
+				<dk:textSimple>
+					<sc:para xml:space="preserve" sc:id="t4">In a translation-oriented terminology database, this Entry feature is the identifier of the language in which the original text is written. You should use normalized (e.g. ISO) codes. You may use a locale instead of a language code. Examples: <sc:inlineStyle role="alt" sc:id="t5">ENG</sc:inlineStyle>, <sc:inlineStyle role="alt" sc:id="t6">EN</sc:inlineStyle>, <sc:inlineStyle role="alt" sc:id="t7">en-US</sc:inlineStyle>.</sc:para>
+				</dk:textSimple>
+			</sp:def>
+		</dk:definitionMeta>
+	</dk:definition>
+</sc:item>

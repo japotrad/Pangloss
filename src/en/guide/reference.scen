@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:section xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:title>
+			<sc:fullTitle>Reference</sc:fullTitle>
+		</dk:title>
+		<sp:subSection>
+			<dk:section>
+				<dk:title>
+					<sc:fullTitle>Supported Features</sc:fullTitle>
+				</dk:title>
+				<sp:content>
+					<dk:content>
+						<sp:def sc:refUri="/concept/featureList.unit"/>
+					</dk:content>
+				</sp:content>
+			</dk:section>
+		</sp:subSection>
+	</dk:section>
+</sc:item>

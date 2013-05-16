@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:definition xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:definitionMeta>
+			<sp:notion>XSL</sp:notion>
+			<sp:syn>eXtensible Stylesheet Language, also known as XSLT (eXtensible Stylesheet Language Transformations)</sp:syn>
+			<sp:def>
+				<dk:textSimple>
+					<sc:para xml:space="preserve" sc:id="t3">XSL is a <sc:uLink sc:id="t4" url="http://www.w3.org/standards/xml/transformation">W3C</sc:uLink>-standardised language. It is very convenient to use this language when you need to transform an XML file into a text, a HTML or another XML file.</sc:para>
+				</dk:textSimple>
+			</sp:def>
+		</dk:definitionMeta>
+	</dk:definition>
+</sc:item>

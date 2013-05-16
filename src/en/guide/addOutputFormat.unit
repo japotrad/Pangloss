@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:stepList xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:sTitle>
+			<sc:fullTitle>How to add a new export format</sc:fullTitle>
+		</dk:sTitle>
+		<sp:intro>
+			<dk:comment>
+				<sp:infobloc>
+					<dk:flowAll>
+						<sp:txt>
+							<dk:text>
+								<sc:para xml:space="preserve" sc:id="t3">You can expand Pangloss capability so that it can generate new file formats. To do so, you will need some <sc:uLink role="def" sc:id="t14" sc:refUri="/definition/xsl.ref">XSL</sc:uLink> skills. If you do not know XSL, you can start learning it on <sc:uLink sc:id="t13" url="http://www.w3schools.com/xsl/default.asp">w3schools.com</sc:uLink>.</sc:para>
+							</dk:text>
+						</sp:txt>
+					</dk:flowAll>
+				</sp:infobloc>
+			</dk:comment>
+		</sp:intro>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para>
+							<sc:para xml:space="preserve" sc:id="t16">Study the Pangloss native format</sc:para>
+						</dk:para>
+					</sp:ti>
+				</dk:stepM>
+			</dk:step>
+		</sp:step>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para>
+							<sc:para xml:space="preserve" sc:id="t18">Develop the transformation sheet</sc:para>
+						</dk:para>
+					</sp:ti>
+				</dk:stepM>
+			</dk:step>
+		</sp:step>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para>
+							<sc:para xml:space="preserve" sc:id="t20">Test your transformation sheet</sc:para>
+						</dk:para>
+					</sp:ti>
+				</dk:stepM>
+			</dk:step>
+		</sp:step>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para>
+							<sc:para xml:space="preserve" sc:id="t22">Integrate your transformation sheet into Pangloss</sc:para>
+						</dk:para>
+					</sp:ti>
+				</dk:stepM>
+			</dk:step>
+		</sp:step>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para>
+							<sc:para xml:space="preserve" sc:id="t24">Add some parameters</sc:para>
+						</dk:para>
+					</sp:ti>
+				</dk:stepM>
+			</dk:step>
+		</sp:step>
+	</dk:stepList>
+</sc:item>

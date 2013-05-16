@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:stepList xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:sTitle>
+			<sc:fullTitle>How to export a termbase</sc:fullTitle>
+		</dk:sTitle>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para>
+							<sc:para xml:space="preserve" sc:id="t5">Define the root node</sc:para>
+						</dk:para>
+					</sp:ti>
+				</dk:stepM>
+				<sp:detail>
+					<dk:comment>
+						<sp:infobloc>
+							<dk:sTitle>
+								<sc:fullTitle>Select the root node</sc:fullTitle>
+							</dk:sTitle>
+							<dk:flowAll>
+								<sp:txt>
+									<dk:text/>
+								</sp:txt>
+							</dk:flowAll>
+						</sp:infobloc>
+						<sp:infobloc>
+							<dk:sTitle>
+								<sc:fullTitle>Add some common features</sc:fullTitle>
+							</dk:sTitle>
+							<dk:flowAll>
+								<sp:txt>
+									<dk:text/>
+								</sp:txt>
+							</dk:flowAll>
+						</sp:infobloc>
+					</dk:comment>
+				</sp:detail>
+			</dk:step>
+		</sp:step>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para>
+							<sc:para xml:space="preserve" sc:id="t15">Export the file</sc:para>
+						</dk:para>
+					</sp:ti>
+				</dk:stepM>
+				<sp:detail>
+					<dk:comment>
+						<sp:infobloc>
+							<dk:sTitle>
+								<sc:fullTitle>Open the dialog</sc:fullTitle>
+							</dk:sTitle>
+							<dk:flowAll>
+								<sp:txt>
+									<dk:text/>
+								</sp:txt>
+							</dk:flowAll>
+						</sp:infobloc>
+						<sp:infobloc>
+							<dk:sTitle>
+								<sc:fullTitle>Select the output format</sc:fullTitle>
+							</dk:sTitle>
+							<dk:flowAll>
+								<sp:txt>
+									<dk:text/>
+								</sp:txt>
+							</dk:flowAll>
+						</sp:infobloc>
+						<sp:infobloc>
+							<dk:sTitle>
+								<sc:fullTitle>Set the termbase name</sc:fullTitle>
+							</dk:sTitle>
+							<dk:flowAll>
+								<sp:txt>
+									<dk:text/>
+								</sp:txt>
+							</dk:flowAll>
+						</sp:infobloc>
+					</dk:comment>
+				</sp:detail>
+			</dk:step>
+		</sp:step>
+	</dk:stepList>
+</sc:item>

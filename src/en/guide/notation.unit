@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:part xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:sTitle>
+			<sc:fullTitle>Alternative notations</sc:fullTitle>
+		</dk:sTitle>
+		<sp:co>
+			<dk:content>
+				<sp:infobloc>
+					<dk:sTitle>
+						<sc:fullTitle>Pangloss supports three alternative notations for features</sc:fullTitle>
+					</dk:sTitle>
+					<dk:flowAll>
+						<sp:txt>
+							<dk:text>
+								<sc:para xml:space="preserve" sc:id="t3">A feature can be written equivalently either as :</sc:para>
+								<sc:itemizedList sc:id="t4">
+									<sc:listItem sc:id="t5">
+										<sc:para xml:space="preserve" sc:id="t10">An attribute of the <sc:uLink role="def" sc:id="t13" sc:refUri="/definition/node.ref">node</sc:uLink></sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t8">
+										<sc:para xml:space="preserve" sc:id="t11">A text fragment in the node's detail</sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t9">
+										<sc:para xml:space="preserve" sc:id="t12">A text fragment in the node's note</sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+							</dk:text>
+						</sp:txt>
+					</dk:flowAll>
+				</sp:infobloc>
+			</dk:content>
+		</sp:co>
+	</dk:part>
+</sc:item>

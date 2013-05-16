@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:definition xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:definitionMeta>
+			<sp:notion>Node style</sp:notion>
+			<sp:def>
+				<dk:textSimple>
+					<sc:para xml:space="preserve" sc:id="t3">The layout of a node (fonts, colors, edges, clouds, etc) can be customized throug a recorded set of parameters, which is called a style. This notion is similar to the style you can find in popular word processors like Microsoft Word, OpenOffice Writer, LibreOffice Writer, etc. Pangloss processes only the nodes of the following given style: <sc:textLeaf role="label" sc:id="t10">Concept</sc:textLeaf>.</sc:para>
+				</dk:textSimple>
+			</sp:def>
+		</dk:definitionMeta>
+	</dk:definition>
+</sc:item>

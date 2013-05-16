@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:definition xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:definitionMeta>
+			<sp:notion>objectLanguage</sp:notion>
+			<sp:def>
+				<dk:textSimple>
+					<sc:para xml:space="preserve" sc:id="t3">This Entry feature is the identifier of the language for which information is provided, i.e. the language of the <sc:inlineStyle role="emphasis" sc:id="t9">term</sc:inlineStyle> feature.</sc:para>
+					<sc:para xml:space="preserve" sc:id="t8">You should use normalized (e.g. ISO) codes. You may use a locale instead of a language code. Examples: <sc:inlineStyle role="alt" sc:id="t5">ENG</sc:inlineStyle>, <sc:inlineStyle role="alt" sc:id="t6">EN</sc:inlineStyle>, <sc:inlineStyle role="alt" sc:id="t7">en-US</sc:inlineStyle>.</sc:para>
+				</dk:textSimple>
+			</sp:def>
+		</dk:definitionMeta>
+	</dk:definition>
+</sc:item>

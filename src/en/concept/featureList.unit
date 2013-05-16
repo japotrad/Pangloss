@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:concept xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<sp:def>
+			<dk:definition>
+				<dk:definitionMeta>
+					<sp:notion>Feature</sp:notion>
+					<sp:def>
+						<dk:textSimple>
+							<sc:para xml:space="preserve" sc:id="t3">In a glossary, the actual information is embedded in features. Some Features apply only to Entries. Others apply only to Terms. And some Features may apply both to Entries and Terms. A Feature has a name and a value. The name of the feature can be viewed as the type of data attached to the Entry or the Term. It corresponds to the data categories that can be found at <sc:uLink sc:id="t339" url="www.isocat.org">www.isocat.org</sc:uLink>.</sc:para>
+						</dk:textSimple>
+					</sp:def>
+				</dk:definitionMeta>
+			</dk:definition>
+		</sp:def>
+		<sp:desc>
+			<dk:comment>
+				<sp:infobloc>
+					<dk:flowAll>
+						<sp:txt>
+							<dk:text>
+								<sc:para xml:space="preserve" sc:id="t15">The Features Pangloss supports are listed below. Features applying to Entries are marked with the <sc:inlineImg role="iconButton" sc:id="t136" sc:refUri="/icon/entry.icon.png"/> icon. Features applying to Terms are marked with the <sc:inlineImg role="iconButton" sc:id="t137" sc:refUri="/icon/term.icon.png"/> icon.</sc:para>
+								<sc:table role="table" sc:id="t18">
+									<sc:caption xml:space="preserve" sc:id="t101">Entries and Terms Features</sc:caption>
+									<sc:column role="col" sc:id="t19" width="33"/>
+									<sc:column role="col" sc:id="t20" width="33"/>
+									<sc:column role="col" sc:id="t21" width="33"/>
+									<sc:row role="rowTi" sc:id="t180">
+										<sc:cell role="cell" sc:id="t181">
+											<sc:para xml:space="preserve" sc:id="t170"><sc:inlineStyle role="emphasis" sc:id="t182">Feature name</sc:inlineStyle></sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t183">
+											<sc:para xml:space="preserve" sc:id="t171"><sc:inlineStyle role="emphasis" sc:id="t184">Definition</sc:inlineStyle></sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t185">
+											<sc:para xml:space="preserve" sc:id="t172"><sc:inlineStyle role="emphasis" sc:id="t186">Example</sc:inlineStyle></sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row role="row" sc:id="t187">
+										<sc:cell role="cell" sc:id="t188">
+											<sc:para xml:space="preserve" sc:id="t173"><sc:inlineStyle role="emphasis" sc:id="t189">context</sc:inlineStyle> <sc:inlineImg role="iconButton" sc:id="t179" sc:refUri="/icon/term.icon.png"/></sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t190">
+											<sc:para xml:space="preserve" sc:id="t176">Example of use. A text which illustrates the use of a designation.</sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t191">
+											<sc:para xml:space="preserve" sc:id="t175">Here is a context sentence illustrating the term <sc:inlineStyle role="alt" sc:id="t192">samples gallery</sc:inlineStyle>: <sc:inlineStyle role="alt" sc:id="t193">The program may contain sample source code or programs, which illustrate programming techniques. These samples are found in the samples gallery.</sc:inlineStyle></sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row role="row" sc:id="t340">
+										<sc:cell role="cell" sc:id="t341">
+											<sc:para xml:space="preserve" sc:id="t234"><sc:inlineStyle role="emphasis" sc:id="t342">customerSubset <sc:inlineImg role="iconButton" sc:id="t237" sc:refUri="/icon/term.icon.png"/></sc:inlineStyle></sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t343">
+											<sc:para xml:space="preserve" sc:id="t235">An identifier indicating that a Term is associated with a specific customer.</sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t344">
+											<sc:para xml:space="preserve" sc:id="t236">If the IBM company uses the above term <sc:inlineStyle role="alt" sc:id="t345">samples gallery</sc:inlineStyle>, then the IBM customerSubset shall be attached to this term.</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row role="row" sc:id="t346">
+										<sc:cell role="cell" sc:id="t347">
+											<sc:para xml:space="preserve" sc:id="t226"><sc:inlineStyle role="emphasis" sc:id="t348">definition</sc:inlineStyle> <sc:inlineImg role="iconButton" sc:id="t229" sc:refUri="/icon/entry.icon.png"/></sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t349">
+											<sc:para xml:space="preserve" sc:id="t231">A representation of a concept by a descriptive statement which serves to differentiate it from related concepts.</sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t350">
+											<sc:para xml:space="preserve" sc:id="t228">The concept of progressive lens may be defined as follows: <sc:inlineStyle role="alt" sc:id="t351">Corrective lenses used in eyeglasses to correct presbyopia and other disorders of accommodation, characterised by a gradient of increasing lens power, added to the wearer's correction for the other refractive errors.</sc:inlineStyle></sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row role="row" sc:id="t352">
+										<sc:cell role="cell" sc:id="t353">
+											<sc:para xml:space="preserve" sc:id="t238"><sc:inlineStyle role="emphasis" sc:id="t354">entryIdentifier</sc:inlineStyle> <sc:inlineImg role="iconButton" sc:id="t241" sc:refUri="/icon/entry.icon.png"/></sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t355">
+											<sc:para xml:space="preserve" sc:id="t242">An alphanumeric string that</sc:para>
+											<sc:para xml:space="preserve" sc:id="t243">serves as the unique identifier of an  Entry.</sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t356">
+											<sc:para xml:space="preserve" sc:id="t240">These codes are usually generated automatically by the application. Example: <sc:inlineStyle role="alt" sc:id="t357">eid-Oracle-67</sc:inlineStyle></sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row role="row" sc:id="t358">
+										<sc:cell role="cell" sc:id="t359">
+											<sc:para xml:space="preserve" sc:id="t256"><sc:inlineStyle role="emphasis" sc:id="t360">languageID</sc:inlineStyle> <sc:inlineImg role="iconButton" sc:id="t262" sc:refUri="/icon/entry.icon.png"/></sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t361">
+											<sc:para xml:space="preserve" sc:id="t257">Identifier of the language that is included in the Entry. Typically, this is the language of the <sc:inlineStyle role="emphasis" sc:id="t362">definition</sc:inlineStyle> of a concept.</sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t363">
+											<sc:para xml:space="preserve" sc:id="t258">You should use normalized (e.g. ISO) codes. You may use a locale instead of a language code. Examples: <sc:inlineStyle role="alt" sc:id="t259">ENG</sc:inlineStyle>, <sc:inlineStyle role="alt" sc:id="t260">EN</sc:inlineStyle>, <sc:inlineStyle role="alt" sc:id="t261">en-US</sc:inlineStyle>.</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row role="row" sc:id="t364">
+										<sc:cell role="cell" sc:id="t365">
+											<sc:para xml:space="preserve" sc:id="t249"><sc:inlineStyle role="emphasis" sc:id="t366">objectLanguage</sc:inlineStyle> <sc:inlineImg role="iconButton" sc:id="t252" sc:refUri="/icon/term.icon.png"/></sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t367">
+											<sc:para xml:space="preserve" sc:id="t250">Identifier of the language for which information is provided, i.e. the language of the <sc:inlineStyle role="emphasis" sc:id="t368">term</sc:inlineStyle> feature.</sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t369">
+											<sc:para xml:space="preserve" sc:id="t251">You should use normalized (e.g. ISO) codes. You may use a locale instead of a language code. Examples: <sc:inlineStyle role="alt" sc:id="t370">ENG</sc:inlineStyle>, <sc:inlineStyle role="alt" sc:id="t371">EN</sc:inlineStyle>, <sc:inlineStyle role="alt" sc:id="t372">en-US</sc:inlineStyle>.</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row role="row" sc:id="t373">
+										<sc:cell role="cell" sc:id="t374">
+											<sc:para xml:space="preserve" sc:id="t245"><sc:inlineStyle role="emphasis" sc:id="t375">projectSubset</sc:inlineStyle> <sc:inlineImg role="iconButton" sc:id="t248" sc:refUri="/icon/term.icon.png"/></sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t376">
+											<sc:para xml:space="preserve" sc:id="t246">An identifier assigned to a specific project indicating that it is associated with a Term.</sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t377">
+											<sc:para xml:space="preserve" sc:id="t247">These codes are usually generated by project managers. Example: <sc:inlineStyle role="alt" sc:id="t378">TD-</sc:inlineStyle></sc:para>
+											<sc:para xml:space="preserve" sc:id="t379"><sc:inlineStyle role="alt" sc:id="t380">13</sc:inlineStyle></sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row role="row" sc:id="t26">
+										<sc:cell role="cell" sc:id="t27">
+											<sc:para xml:space="preserve" sc:id="t57"><sc:inlineStyle role="emphasis" sc:id="t105">term </sc:inlineStyle><sc:inlineImg role="iconButton" sc:id="t98" sc:refUri="/icon/term.icon.png"/></sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t28">
+											<sc:para xml:space="preserve" sc:id="t92">A verbal designation of a general concept in a specific subject field. This feature is the most important feature of a Term. It can consist of single words or be composed of multiword strings. The distinguishing characteristic of a term is that it is assigned to a single concept, as opposed to a phraseological unit, which combines more than one concept in a lexicalized fashion to express complex situations.</sc:para>
+										</sc:cell>
+										<sc:cell role="cell" sc:id="t29">
+											<sc:para xml:space="preserve" sc:id="t61"><sc:inlineStyle role="alt" sc:id="t194">Quality assurance system</sc:inlineStyle> is a term, whereas <sc:inlineStyle role="alt" sc:id="t195">satisfy quality requirements</sc:inlineStyle> is a phraseological unit, specifically a collocation.</sc:para>
+										</sc:cell>
+									</sc:row>
+									<sc:row role="row" sc:id="t30">
+										<sc:cell role="cell" sc:id="t31"/>
+										<sc:cell role="cell" sc:id="t32"/>
+										<sc:cell role="cell" sc:id="t33"/>
+									</sc:row>
+									<sc:row role="row" sc:id="t34">
+										<sc:cell role="cell" sc:id="t35"/>
+										<sc:cell role="cell" sc:id="t36"/>
+										<sc:cell role="cell" sc:id="t37"/>
+									</sc:row>
+									<sc:row role="row" sc:id="t38">
+										<sc:cell role="cell" sc:id="t39"/>
+										<sc:cell role="cell" sc:id="t40"/>
+										<sc:cell role="cell" sc:id="t41"/>
+									</sc:row>
+									<sc:row role="row" sc:id="t42">
+										<sc:cell role="cell" sc:id="t43"/>
+										<sc:cell role="cell" sc:id="t44"/>
+										<sc:cell role="cell" sc:id="t45"/>
+									</sc:row>
+									<sc:row role="row" sc:id="t46">
+										<sc:cell role="cell" sc:id="t47"/>
+										<sc:cell role="cell" sc:id="t48"/>
+										<sc:cell role="cell" sc:id="t49"/>
+									</sc:row>
+								</sc:table>
+							</dk:text>
+						</sp:txt>
+					</dk:flowAll>
+				</sp:infobloc>
+			</dk:comment>
+		</sp:desc>
+	</dk:concept>
+</sc:item>

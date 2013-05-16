@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:stepList xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:sTitle>
+			<sc:fullTitle>How to add an entry</sc:fullTitle>
+		</dk:sTitle>
+		<sp:step>
+			<dk:step>
+				<dk:stepM>
+					<sp:ti>
+						<dk:para/>
+					</sp:ti>
+				</dk:stepM>
+			</dk:step>
+		</sp:step>
+	</dk:stepList>
+</sc:item>

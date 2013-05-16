@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"><dk:mediaWeb xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core"><dk:mediaWebMeta><sp:title>Parent-child relationship</sp:title></dk:mediaWebMeta><sp:unknown><dk:mwUnMeta><sp:align>center</sp:align><sp:frag>&lt;xhtml:script xmlns:xhtml=&quot;http://www.w3.org/1999/xhtml&quot; src=&quot;./flashobject.js&quot; type=&quot;text/javascript&quot;/>
+
+&lt;xhtml:div xmlns:xhtml=&quot;http://www.w3.org/1999/xhtml&quot; id=&quot;flashcontent&quot;>
+
+          Flash plugin or Javascript are turned off.
+
+          Activate both  and reload to view the mindmap
+
+&lt;/xhtml:div>
+
+&lt;xhtml:script xmlns:xhtml=&quot;http://www.w3.org/1999/xhtml&quot; type=&quot;text/javascript&quot;>
+
+          var fo = new FlashObject(&quot;./visorFreeplane.swf&quot;, &quot;visorFreeplane&quot;, &quot;100%&quot;, &quot;100%&quot;, 8);
+
+          fo.addParam(&quot;quality&quot;, &quot;high&quot;);
+
+          fo.addVariable(&quot;bgcolor&quot;, 0xffffff);
+
+          fo.addVariable(&quot;openUrl&quot;, &quot;_blank&quot;);
+
+          fo.addVariable(&quot;initLoadFile&quot;, &quot;./parent-child.mm&quot;);
+
+          fo.addVariable(&quot;startCollapsedToLevel&quot;,&quot;2&quot;);
+
+          fo.write(&quot;flashcontent&quot;);
+
+&lt;/xhtml:script>
+
+&lt;xhtml:img xmlns:xhtml=&quot;http://www.w3.org/1999/xhtml&quot; style=&quot;visibility: hidden;&quot; src=&quot;./visorFreeplane.swf&quot;/>
+
+&lt;xhtml:img xmlns:xhtml=&quot;http://www.w3.org/1999/xhtml&quot; style=&quot;visibility: hidden;&quot; src=&quot;./flashobject.js&quot;/>
+
+&lt;xhtml:img xmlns:xhtml=&quot;http://www.w3.org/1999/xhtml&quot; style=&quot;visibility: hidden;&quot; src=&quot;./parent-child.mm&quot;/></sp:frag></dk:mwUnMeta></sp:unknown></dk:mediaWeb></sc:item>
