@@ -11,6 +11,6 @@
 				<dk:rootM/>
 			</sp:rootM>
 		</dk:webRootM>
-		<sp:guide sc:refUri="/src/guide.scen"/>
+		<sp:guide sc:refUri="/guide/guide.scen"/>
 	</dk:webRoot>
 </sc:item>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:section xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:title>
+			<sc:fullTitle>How to make rich entries</sc:fullTitle>
+			<sc:shortTitle>Details and note</sc:shortTitle>
+		</dk:title>
+		<sp:content>
+			<dk:content>
+				<sp:infobloc>
+					<dk:flowAll>
+						<sp:txt>
+							<dk:text>
+								<sc:para xml:space="preserve" sc:id="t3">Using only the <sc:uLink role="def" sc:id="t4" sc:refUri="/definition/node attributes.ref">node attributes</sc:uLink> to store the features involves the following limitations:</sc:para>
+								<sc:itemizedList sc:id="t5">
+									<sc:listItem sc:id="t7">
+										<sc:para xml:space="preserve">You cannot distinguish between two terms having the same language. This case is quite common if  you work for two customers who use different words to refer to the same concept. </sc:para>
+									</sc:listItem>
+								</sc:itemizedList>
+							</dk:text>
+						</sp:txt>
+					</dk:flowAll>
+				</sp:infobloc>
+			</dk:content>
+		</sp:content>
+	</dk:section>
+</sc:item>

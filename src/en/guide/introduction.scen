@@ -45,7 +45,7 @@
 																<sc:para xml:space="preserve" sc:id="t55">The most significant terms are stored in the <sc:uLink role="def" sc:id="t56" sc:refUri="/definition/node core.ref">node core</sc:uLink>.</sc:para>
 															</sc:listItem>
 															<sc:listItem sc:id="t57">
-																<sc:para xml:space="preserve" sc:id="t58">Most Entry and Term features can be stored either in the node <sc:uLink role="def" sc:id="t59" sc:refUri="/definition/node note.ref">note</sc:uLink>, <sc:uLink role="def" sc:id="t60" sc:refUri="/definition/node details.ref">details</sc:uLink> or <sc:uLink role="def" sc:id="t61" sc:refUri="/definition/node attributes.ref">attributes</sc:uLink>.</sc:para>
+																<sc:para xml:space="preserve" sc:id="t58">Most Entry and Term features can be stored either in node <sc:uLink role="def" sc:id="t59" sc:refUri="/definition/node note.ref"/><sc:uLink role="def" sc:id="t61" sc:refUri="/definition/node attributes.ref">attributes</sc:uLink>.</sc:para>
 															</sc:listItem>
 														</sc:orderedList>
 													</dk:text>
@@ -79,7 +79,7 @@
 																				<sc:para xml:space="preserve" sc:id="t83">Select the node.</sc:para>
 																			</sc:listItem>
 																			<sc:listItem sc:id="t84">
-																				<sc:para xml:space="preserve" sc:id="t85">In the style drop-down box, select</sc:para>
+																				<sc:para xml:space="preserve" sc:id="t85">In the style drop-down box, select <sc:textLeaf role="menuPath" sc:id="t263">Entry</sc:textLeaf></sc:para>
 																			</sc:listItem>
 																		</sc:orderedList>
 																	</dk:text>
@@ -195,7 +195,7 @@
 										<dk:stepM>
 											<sp:ti>
 												<dk:para>
-													<sc:para xml:space="preserve" sc:id="t169">Add the features either in the node note, details or attributes.</sc:para>
+													<sc:para xml:space="preserve" sc:id="t169">Add the features either in the node attributes.</sc:para>
 												</dk:para>
 											</sp:ti>
 										</dk:stepM>
@@ -287,16 +287,6 @@
 								</sp:step>
 							</dk:stepList>
 						</sp:op>
-						<sp:infobloc>
-							<dk:flowAll>
-								<sp:txt>
-									<dk:text>
-										<sc:para xml:space="preserve" sc:id="t27">The most important thing to remember if you want to use Pangloss is to apply the <sc:inlineStyle role="emphasis">Entry</sc:inlineStyle> <sc:uLink role="def" sc:id="t29" sc:refUri="/definition/node style.ref">style</sc:uLink> to all nodes containing glossary entries. If this style is not defined in your map, just create it yourself.</sc:para>
-										<sc:para xml:space="preserve">For more information about node style, click <sc:uLink sc:id="t28" url="A style is applied to a map node, so that it becomes an glossary Entry. The name of the style is: Entry.">here</sc:uLink>.</sc:para>
-									</dk:text>
-								</sp:txt>
-							</dk:flowAll>
-						</sp:infobloc>
 					</dk:content>
 				</sp:content>
 			</dk:section>

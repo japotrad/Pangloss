@@ -4,7 +4,7 @@
 		<dk:userGuideM>
 			<sp:title>Pangloss user guide</sp:title>
 		</dk:userGuideM>
-		<sp:subSection sc:refUri="/guide/Intro.scen"/>
+		<sp:subSection sc:refUri="/guide/introduction.scen"/>
 		<sp:subSection sc:refUri="/guide/reference.scen"/>
 	</dk:userGuide>
 </sc:item>
