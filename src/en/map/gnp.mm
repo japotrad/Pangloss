@@ -1,7 +1,7 @@
 <map version="freeplane 1.2.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node LOCALIZED_TEXT="new_mindmap" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1283093380553"><hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true"/>
+    <properties show_icon_for_attributes="true" show_note_icons="false" show_notes_in_map="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node">
@@ -50,18 +50,121 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="3"/>
-<node TEXT="Gross national product" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_194408018" CREATED="1368028350000" MODIFIED="1368716570109">
-<edge STYLE="hide_edge" COLOR="#ff0000"/>
-<attribute_layout NAME_WIDTH="106" VALUE_WIDTH="260"/>
-<attribute NAME="objectLanguage" VALUE="ENG"/>
-<attribute NAME="definition" VALUE="The market value of all the products and services produced in one year by labour and property supplied by the residents of a country."/>
-</node>
-<node TEXT="Gross national product=Producto Nacional Bruto" POSITION="left" ID="ID_694498855" CREATED="1368028415750" MODIFIED="1368717383421">
+<hook NAME="AutomaticEdgeColor" COUNTER="6"/>
+<node TEXT="Gross national product=Producto Nacional Bruto" POSITION="right" ID="ID_694498855" CREATED="1368028415750" MODIFIED="1368717383421">
 <edge STYLE="hide_edge" COLOR="#00ff00"/>
 <attribute_layout NAME_WIDTH="109" VALUE_WIDTH="109"/>
 <attribute NAME="sourceLanguage" VALUE="en-US"/>
 <attribute NAME="targetLanguage" VALUE="es-SP"/>
+</node>
+<node TEXT="Gross national product" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_194408018" CREATED="1368028350000" MODIFIED="1369235540765">
+<edge STYLE="hide_edge" COLOR="#ff0000"/>
+<attribute_layout NAME_WIDTH="106" VALUE_WIDTH="260"/>
+<attribute NAME="objectLanguage" VALUE="ENG"/>
+<attribute NAME="definition" VALUE="The market value of all the products and services produced in one year by labour and property supplied by the residents of a country."/>
+<font BOLD="true"/>
+</node>
+<node TEXT="Gross national product" LOCALIZED_STYLE_REF="default" POSITION="left" ID="ID_143489233" CREATED="1368028350000" MODIFIED="1368807680542">
+<edge STYLE="hide_edge" COLOR="#ff0066"/>
+<attribute_layout NAME_WIDTH="106" VALUE_WIDTH="260"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The market value of all the products and services produced in one year by labour and property supplied by the residents of a country.
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The United States used the gross national product as its primary measure of total economic activity before 1991, when it began to use the gross domestic product.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="" POSITION="left" ID="ID_1845301297" CREATED="1368807618136" MODIFIED="1368808741464"/>
+<node TEXT="Gross national product=Producto Nacional Bruto" POSITION="left" ID="ID_1381696589" CREATED="1368028415750" MODIFIED="1369494190296" VSHIFT="30">
+<edge STYLE="hide_edge" COLOR="#00ff00"/>
+<attribute_layout NAME_WIDTH="109" VALUE_WIDTH="109"/>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The United States used the gross national product as its primary measure of total economic activity before 1991, when it began to use the gross domestic product.
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The market value of all the products and services produced in one year by labour and property supplied by the residents of a country.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Gross national product" LOCALIZED_STYLE_REF="default" POSITION="right" ID="ID_178727116" CREATED="1368028350000" MODIFIED="1369235565000">
+<edge STYLE="hide_edge" COLOR="#ff0066"/>
+<attribute_layout NAME_WIDTH="106" VALUE_WIDTH="260"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The market value of all the products and services produced in one year by labour and property supplied by the residents of a country.
+    </p>
+    <p>
+      <b>context=</b>The United States used the gross national product as its primary measure of total economic activity before 1991, when it began to use the gross domestic product.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Gross national product=Producto Nacional Bruto" POSITION="right" ID="ID_749255889" CREATED="1368028415750" MODIFIED="1369235555718" VSHIFT="30">
+<edge STYLE="hide_edge" COLOR="#00ff00"/>
+<attribute_layout NAME_WIDTH="109" VALUE_WIDTH="109"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The market value of all the products and services produced in one year by labour and property supplied by the residents of a country.
+    </p>
+    <p>
+      <b>sourceLanguage:context=</b>The United States used the gross national product as its primary measure of total economic activity before 1991, when it began to use the gross domestic product.
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
 </map>

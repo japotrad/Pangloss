@@ -126,10 +126,10 @@
 																		<sc:para xml:space="preserve" sc:id="t100">Double-click the <sc:uLink role="def" sc:id="t104" sc:refUri="/definition/node core.ref">node core</sc:uLink>.</sc:para>
 																	</sc:listItem>
 																	<sc:listItem sc:id="t103">
-																		<sc:para xml:space="preserve">Input the term describing the best the concept you are talking about.</sc:para>
+																		<sc:para xml:space="preserve" sc:id="t292">Input the term describing the best the concept you are talking about.</sc:para>
 																	</sc:listItem>
 																	<sc:listItem sc:id="t105">
-																		<sc:para xml:space="preserve">Optionally, if you work mainly with two languages, append an equal <sc:inlineStyle role="emphasis"><sc:inlineStyle role="emphasis"><sc:textLeaf role="label" sc:id="t106">=</sc:textLeaf></sc:inlineStyle></sc:inlineStyle> followed by the appropriate term in the other language.</sc:para>
+																		<sc:para xml:space="preserve" sc:id="t293">Optionally, if you work mainly with two languages, append an equals sign (symbol <sc:inlineStyle role="emphasis" sc:id="t294"><sc:inlineStyle role="emphasis" sc:id="t295"><sc:textLeaf role="label" sc:id="t106">=</sc:textLeaf></sc:inlineStyle></sc:inlineStyle> )followed by the appropriate term in the other language.</sc:para>
 																	</sc:listItem>
 																</sc:orderedList>
 															</dk:text>
@@ -148,7 +148,7 @@
 														<sp:txt>
 															<dk:text>
 																<sc:para xml:space="preserve" sc:id="t112">If a node core contains no equal character, it is considered as a <sc:inlineStyle role="emphasis" sc:id="t143">Conceptual Entry</sc:inlineStyle>. Such Entry focuses on the concept itself (it may be multilingual). The language to be input in the node core should correspond to the <sc:uLink role="def" sc:id="t128" sc:refUri="/definition/feature/languageID.ref">languageID</sc:uLink> feature.</sc:para>
-																<sc:para xml:space="preserve" sc:id="t144">If a node core contains an equal character, it is considered as a <sc:inlineStyle role="emphasis" sc:id="t145">Bilingual  Entry</sc:inlineStyle>. Such Entry focuses on the term in a primary language called the source language. The language to be input in the node core should correspond to the <sc:uLink role="def" sc:id="t150" sc:refUri="/definition/feature/sourceLanguage.ref">sourceLanguage<sc:uLink role="def" sc:id="t130" sc:refUri="/definition/feature/languageID.ref"/></sc:uLink><sc:uLink role="def" sc:id="t130" sc:refUri="/definition/feature/languageID.ref"/> feature.</sc:para>
+																<sc:para xml:space="preserve" sc:id="t144">If a node core contains an equal character, it is considered as a <sc:inlineStyle role="emphasis" sc:id="t145">Bilingual  Entry</sc:inlineStyle>. Such Entry focuses on the term in a primary language called the source language. The language to be input in the <sc:uLink role="def" sc:id="t274" sc:refUri="/definition/node core.ref">node core</sc:uLink> before the equals sign (i.e. the source term) should correspond to the <sc:uLink role="def" sc:id="t150" sc:refUri="/definition/feature/sourceLanguage.ref">sourceLanguage<sc:uLink role="def" sc:id="t130" sc:refUri="/definition/feature/languageID.ref"/></sc:uLink><sc:uLink role="def" sc:id="t130" sc:refUri="/definition/feature/languageID.ref"/> feature. The language to be input after the equals sign (i.e. the target term) should correspond to the <sc:uLink role="def" sc:id="t290" sc:refUri="/definition/feature/targetLanguage.ref">targetLanguage</sc:uLink><sc:uLink role="def" sc:id="t278" sc:refUri="/definition/feature/languageID.ref"/> feature. </sc:para>
 															</dk:text>
 														</sp:txt>
 													</dk:flowAll>
@@ -264,7 +264,7 @@
 														<sp:txtRes>
 															<dk:txtRes>
 																<dk:txtResM>
-																	<sp:pos>lft</sp:pos>
+																	<sp:pos>rgt</sp:pos>
 																</dk:txtResM>
 																<sp:txt>
 																	<dk:text>
@@ -274,11 +274,6 @@
 																<sp:imgBk sc:refUri="/image/gnpBi2.scr.png"/>
 															</dk:txtRes>
 														</sp:txtRes>
-														<sp:txt>
-															<dk:text>
-																<sc:para xml:space="preserve" sc:id="t241">Let's define the source and target languages.</sc:para>
-															</dk:text>
-														</sp:txt>
 													</dk:flowAll>
 												</sp:example>
 											</dk:comment>

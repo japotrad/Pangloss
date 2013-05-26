@@ -24,6 +24,55 @@
 					<sc:fullTitle>Abbreviating features names</sc:fullTitle>
 					<sc:shortTitle>Abbreviations</sc:shortTitle>
 				</dk:title>
+				<sp:content>
+					<dk:content>
+						<sp:infobloc>
+							<dk:flowAll>
+								<sp:txtRes>
+									<dk:txtRes>
+										<dk:txtResM>
+											<sp:pos>rgt</sp:pos>
+										</dk:txtResM>
+										<sp:txt>
+											<dk:text>
+												<sc:para xml:space="preserve" sc:id="t9">You can define some feature name abbreviations, which will be valid in a whole map branch. Just add a sibling node named <sc:inlineStyle role="emphasis" sc:id="t17">Abbreviations</sc:inlineStyle> and having the style <sc:textLeaf role="menuPath" sc:id="t10">Setting</sc:textLeaf>. Create one node attribute per abbreviation you want to define. </sc:para>
+												<sc:itemizedList sc:id="t14">
+													<sc:listItem sc:id="t15">
+														<sc:para xml:space="preserve" sc:id="t18">The attribute name shall be set to the full name of the feature. If the feature applies to a term, the feature name shall be prefixed with the with the applicable <sc:uLink role="def" sc:id="t11" sc:refUri="/definition/feature/objectLanguage.ref">objectLanguage</sc:uLink> value followed by a colon (if the entry is bilingual, <sc:textLeaf role="label" sc:id="t12">sourceLanguage:</sc:textLeaf> and <sc:textLeaf role="label" sc:id="t13">targetLanguage:</sc:textLeaf> are also OK, provided that these two features are defined).</sc:para>
+													</sc:listItem>
+													<sc:listItem sc:id="t16">
+														<sc:para xml:space="preserve" sc:id="t19">In the attribute value, input the abbreviation you want to use instead of the full form. If you work in a language distinct from English, you may want to define abbreviation corresponding to your own language.</sc:para>
+													</sc:listItem>
+												</sc:itemizedList>
+											</dk:text>
+										</sp:txt>
+										<sp:imgBk sc:refUri="/image/abbreviations.scr.gif"/>
+									</dk:txtRes>
+								</sp:txtRes>
+							</dk:flowAll>
+						</sp:infobloc>
+						<sp:example>
+							<dk:sTitle>
+								<sc:fullTitle>GNP example</sc:fullTitle>
+							</dk:sTitle>
+							<dk:flowAll>
+								<sp:txtRes>
+									<dk:txtRes>
+										<dk:txtResM>
+											<sp:pos>rgt</sp:pos>
+										</dk:txtResM>
+										<sp:txt>
+											<dk:text>
+												<sc:para xml:space="preserve" sc:id="t25">Using the abbreviations defined above, a multilingual entry is quite easy to write, isn't it!</sc:para>
+											</dk:text>
+										</sp:txt>
+										<sp:imgBk sc:refUri="/image/abbreviationExample.scr.gif"/>
+									</dk:txtRes>
+								</sp:txtRes>
+							</dk:flowAll>
+						</sp:example>
+					</dk:content>
+				</sp:content>
 			</dk:section>
 		</sp:subSection>
 		<sp:subSection>

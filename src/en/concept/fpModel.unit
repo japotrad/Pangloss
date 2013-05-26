@@ -47,7 +47,7 @@
 								</dk:txtResM>
 								<sp:txt>
 									<dk:text>
-										<sc:para xml:space="preserve" sc:id="t28">Except from the first node of the map (the so-called root node), all nodes have one parent, which is usually the node from which they have been created.Note that the parent-child relationship can be edited after node creaton.Two nodes having the same parent are called siblings. The children, grand-children, etc. of a node are the descendants of this node. The parent, grand-parent, etc. of a node are the ancestors of this node. The root node is the ancestor of all nodes. A branch is composed of a node and all its descendants.</sc:para>
+										<sc:para xml:space="preserve" sc:id="t28">Except from the first node of the map (the so-called root node), all nodes have one parent, which is usually the node from which they have been created.Note that the parent-child relationship can be edited after node creaton.Two nodes having the same parent are called siblings. The children, grand-children, etc. of a node are the descendants of this node.  A branch is composed of a node and all its descendants. The parent, grand-parent, etc. of a node are the ancestors of this node. The root node is the ancestor of all nodes.</sc:para>
 									</dk:text>
 								</sp:txt>
 								<sp:imgBk sc:refUri="/image/Parent-Child.scr.gif"/>

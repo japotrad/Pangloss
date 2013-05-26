@@ -3,7 +3,7 @@
 	<dk:section xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
 		<dk:title>
 			<sc:fullTitle>How to make rich entries</sc:fullTitle>
-			<sc:shortTitle>Details and note</sc:shortTitle>
+			<sc:shortTitle>Details and notes</sc:shortTitle>
 		</dk:title>
 		<sp:content>
 			<dk:content>
@@ -14,14 +14,148 @@
 								<sc:para xml:space="preserve" sc:id="t3">Using only the <sc:uLink role="def" sc:id="t4" sc:refUri="/definition/node attributes.ref">node attributes</sc:uLink> to store the features involves the following limitations:</sc:para>
 								<sc:itemizedList sc:id="t5">
 									<sc:listItem sc:id="t7">
-										<sc:para xml:space="preserve">You cannot distinguish between two terms having the same language. This case is quite common if  you work for two customers who use different words to refer to the same concept. </sc:para>
+										<sc:para xml:space="preserve" sc:id="t8">You cannot distinguish between two terms having the same language. This case is quite common if  you work for two customers who use different words to refer to the same concept. </sc:para>
+									</sc:listItem>
+									<sc:listItem sc:id="t9">
+										<sc:para xml:space="preserve" sc:id="t10">You cannot easily read long attribute values, like <sc:uLink role="def" sc:id="t11" sc:refUri="/definition/feature/definition.ref">definitions</sc:uLink>, etc.</sc:para>
 									</sc:listItem>
 								</sc:itemizedList>
+								<sc:para xml:space="preserve">This section explains how to use <sc:uLink role="def" sc:id="t14" sc:refUri="/definition/node details.ref">node details</sc:uLink> and <sc:uLink role="def" sc:id="t15" sc:refUri="/definition/node note.ref">notes</sc:uLink> as an alternative or complement to node attributes. Both details and notes are handled as a plain text.</sc:para>
 							</dk:text>
 						</sp:txt>
 					</dk:flowAll>
 				</sp:infobloc>
 			</dk:content>
 		</sp:content>
+		<sp:subSection>
+			<dk:section>
+				<dk:title>
+					<sc:fullTitle>Default contents of node details and note</sc:fullTitle>
+					<sc:shortTitle>Default contents</sc:shortTitle>
+				</dk:title>
+				<sp:content>
+					<dk:content>
+						<sp:infobloc>
+							<dk:flowAll>
+								<sp:txtRes>
+									<dk:txtRes>
+										<dk:txtResM>
+											<sp:pos>rgt</sp:pos>
+										</dk:txtResM>
+										<sp:txt>
+											<dk:text>
+												<sc:para xml:space="preserve" sc:id="t47">Conceptual entry:</sc:para>
+												<sc:itemizedList sc:id="t40">
+													<sc:listItem sc:id="t41">
+														<sc:para xml:space="preserve" sc:id="t42">The <sc:uLink role="def" sc:id="t48" sc:refUri="/definition/node details.ref">node details</sc:uLink> contain the concept <sc:uLink role="def" sc:id="t43" sc:refUri="/definition/feature/definition.ref">definition</sc:uLink>.</sc:para>
+													</sc:listItem>
+													<sc:listItem sc:id="t44">
+														<sc:para xml:space="preserve" sc:id="t45">The <sc:uLink role="def" sc:id="t49" sc:refUri="/definition/node note.ref">node note</sc:uLink> contains the concept <sc:uLink role="def" sc:id="t46" sc:refUri="/definition/feature/context.ref">context</sc:uLink>.</sc:para>
+													</sc:listItem>
+												</sc:itemizedList>
+											</dk:text>
+										</sp:txt>
+										<sp:imgBk sc:refUri="/image/gnpConcept3.scr.gif"/>
+									</dk:txtRes>
+								</sp:txtRes>
+								<sp:txtRes>
+									<dk:txtRes>
+										<dk:txtResM>
+											<sp:pos>rgt</sp:pos>
+										</dk:txtResM>
+										<sp:txt>
+											<dk:text>
+												<sc:para xml:space="preserve" sc:id="t55">Bilingual entry:</sc:para>
+												<sc:itemizedList sc:id="t56">
+													<sc:listItem sc:id="t57">
+														<sc:para xml:space="preserve" sc:id="t58">The details contain the source term <sc:uLink role="def" sc:id="t59" sc:refUri="/definition/feature/definition.ref">definition</sc:uLink>.</sc:para>
+													</sc:listItem>
+													<sc:listItem sc:id="t60">
+														<sc:para xml:space="preserve" sc:id="t61">The note contains the source term <sc:uLink role="def" sc:id="t62" sc:refUri="/definition/feature/context.ref">context</sc:uLink>.</sc:para>
+													</sc:listItem>
+												</sc:itemizedList>
+											</dk:text>
+										</sp:txt>
+										<sp:imgBk sc:refUri="/image/gnpBi3.scr.png"/>
+									</dk:txtRes>
+								</sp:txtRes>
+							</dk:flowAll>
+						</sp:infobloc>
+						<sp:warning>
+							<dk:flowAll>
+								<sp:txt>
+									<dk:text>
+										<sc:para xml:space="preserve" sc:id="t37">The default content starts from the beginning of the details or note text till the occurrence of a valid feature marker, as defined in the next section.</sc:para>
+									</dk:text>
+								</sp:txt>
+							</dk:flowAll>
+						</sp:warning>
+						<sp:complement>
+							<dk:sTitle>
+								<sc:fullTitle>Modifying the default contents</sc:fullTitle>
+							</dk:sTitle>
+							<dk:flowAll>
+								<sp:txtRes>
+									<dk:txtRes>
+										<dk:txtResM>
+											<sp:pos>rgt</sp:pos>
+										</dk:txtResM>
+										<sp:txt>
+											<dk:text>
+												<sc:para xml:space="preserve" sc:id="t69">You can define what is the default contents of the node details and notes of a branch. Just add a sibling node named <sc:inlineStyle role="emphasis">Details&amp;Note</sc:inlineStyle> and having the style <sc:textLeaf role="menuPath" sc:id="t70">Setting</sc:textLeaf>. In the <sc:uLink role="def" sc:id="t118" sc:refUri="/definition/node details.ref">node details</sc:uLink>, input the name of the default feature for node details. If you want to define distinct default features depending whether the entry is conceptual or bilingual, just type the two features names on two lines (1st line for the case of conceptual entries, 2nd line for the case of bilingual entries). In the same way, in the <sc:uLink role="def" sc:id="t119" sc:refUri="/definition/node note.ref">node note</sc:uLink>, input the name of the default feature for the node notes.</sc:para>
+											</dk:text>
+										</sp:txt>
+										<sp:imgBk sc:refUri="/image/defaultFeaturesDetails&amp;Note.scr.gif"/>
+									</dk:txtRes>
+								</sp:txtRes>
+							</dk:flowAll>
+						</sp:complement>
+					</dk:content>
+				</sp:content>
+			</dk:section>
+		</sp:subSection>
+		<sp:subSection>
+			<dk:section>
+				<dk:title>
+					<sc:fullTitle>Extra contents of node details and note</sc:fullTitle>
+					<sc:shortTitle>Extra contents</sc:shortTitle>
+				</dk:title>
+				<sp:content>
+					<dk:content>
+						<sp:infobloc>
+							<dk:flowAll>
+								<sp:txt>
+									<dk:text>
+										<sc:para xml:space="preserve" sc:id="t97">Below the default content of a node details or note (which can be void), you can add some features. The following writing rules apply:</sc:para>
+										<sc:itemizedList sc:id="t98">
+											<sc:listItem sc:id="t99">
+												<sc:para xml:space="preserve" sc:id="t100">Each feature shall start on a new line (<sc:textLeaf role="keyboard" sc:id="t109">Alt</sc:textLeaf>+<sc:textLeaf role="keyboard" sc:id="t110">Enter</sc:textLeaf>).</sc:para>
+											</sc:listItem>
+											<sc:listItem sc:id="t101">
+												<sc:para xml:space="preserve" sc:id="t102">The name of the feature shall be suffixed by an equals sign (= symbol). Furthermore, if the features applies to a term, its name should be prefixed with the applicable <sc:uLink role="def" sc:id="t103" sc:refUri="/definition/feature/objectLanguage.ref">objectLanguage</sc:uLink> value followed by a colon (if the entry is bilingual, <sc:textLeaf role="label" sc:id="t104">sourceLanguage:</sc:textLeaf> and <sc:textLeaf role="label" sc:id="t105">targetLanguage:</sc:textLeaf> are also OK, provided that these two features are defined).</sc:para>
+											</sc:listItem>
+											<sc:listItem sc:id="t106">
+												<sc:para xml:space="preserve" sc:id="t107">After the equals sign, the value of the feature may contains several lines. It extends till another feature starts.</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+										<sc:para xml:space="preserve" sc:id="t117">The example below shows how <sc:uLink role="def" sc:id="t114" sc:refUri="/definition/feature/context.ref">context</sc:uLink> features can be fit into the <sc:uLink role="def" sc:id="t115" sc:refUri="/definition/node details.ref">node details</sc:uLink>.</sc:para>
+									</dk:text>
+								</sp:txt>
+								<sp:fig sc:refUri="/image/gnpExtra.scr.png"/>
+							</dk:flowAll>
+						</sp:infobloc>
+						<sp:example>
+							<dk:flowAll>
+								<sp:txt>
+									<dk:text>
+										<sc:para xml:space="preserve" sc:id="t129">Using node details and note for creating rich entries lets you define 3 <sc:uLink role="def" sc:id="t130" sc:refUri="/definition/feature/term.ref">term</sc:uLink> features for each language. This can be useful in particular if your terminology works applies to several customers or product.</sc:para>
+									</dk:text>
+								</sp:txt>
+							</dk:flowAll>
+						</sp:example>
+					</dk:content>
+				</sp:content>
+			</dk:section>
+		</sp:subSection>
 	</dk:section>
 </sc:item>

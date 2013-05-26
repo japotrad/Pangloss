@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:definition xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:definitionMeta>
+			<sp:notion>term</sp:notion>
+			<sp:def>
+				<dk:textSimple>
+					<sc:para xml:space="preserve" sc:id="t3">This feature is a verbal designation of a general concept in a specific subject field. This feature is the most important feature of a Term. It can consist of single words or be composed of multiword strings. Example: <sc:inlineStyle role="alt">Gross national product</sc:inlineStyle>.</sc:para>
+				</dk:textSimple>
+			</sp:def>
+		</dk:definitionMeta>
+	</dk:definition>
+</sc:item>

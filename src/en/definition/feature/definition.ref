@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<dk:definition xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" xmlns:dk="kelis.fr:dokiel" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+		<dk:definitionMeta>
+			<sp:notion>definition</sp:notion>
+			<sp:def>
+				<dk:textSimple>
+					<sc:para xml:space="preserve" sc:id="t3">This feature is the representation of a concept or term by a descriptive statement which serves to differentiate it from related concepts/terms. In encyclopedias like <sc:uLink sc:id="t4" url="http://en.wikipedia.org">Wikipedia</sc:uLink>, the beginning of an entry is usually a concept definition. Term definition can be found in monolingual dictionaries.</sc:para>
+				</dk:textSimple>
+			</sp:def>
+		</dk:definitionMeta>
+	</dk:definition>
+</sc:item>
