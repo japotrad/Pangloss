@@ -29,17 +29,20 @@ class TestConfig {
 	}
 	@Test
 	public final void testSet() {
-		assertEquals 0, Config.config.size()
+		def configSize = Config.config.size()
 		Config.set("a", "k")
-		assertEquals 1, Config.config.size()
+		assertEquals configSize+1, Config.config.size()
 		Config.set("a", "k")
-		assertEquals 1, Config.config.size()
+		assertEquals configSize+1, Config.config.size()
 		Config.set("abc", "klm")
-		assertEquals 2, Config.config.size()
+		assertEquals configSize+2, Config.config.size()
+		Config.set("abc", "kl")
+		assertEquals configSize+2, Config.config.size()
 	}
 	@Test
 	public final void testGet() {
 		assertEquals'k', Config.get('a')
-		assertEquals 'klm', Config.get('abc')
+		assertEquals 'kl', Config.get('abc')
+		assertEquals ' > ', Config.get('pangloss_field_separator')
 	}
 }
