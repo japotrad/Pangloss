@@ -93,15 +93,16 @@ class Tdc extends Sn {
 	 * Create a collection of the <code>Te</code> according to the children nodes of the glossary root node in the Freeplane map, and populate them.
 	 * Data is read from the root node of the glossary in the Freeplane map.
 	 * Usually, this node is the root node of the map itself (One glossary per map).
-	 * The recursion goes through nodes the style of which is either <code>Concept</code> or <code>Term</code>.
-	 * A Terminological Entry is created for each valid <code>Concept</code> node.
+	 * The recursion goes through nodes the style of which is either <code>Entry</code> or <code>Term</code>.
+	 * A Terminological Entry is created for each valid <code>Entry</code> node.
 	 * @param node The root node of the glossary in the Freeplane map.
 	 * @param tovas The map node of Transitive OVerwritable Attributes. Keys of the map entries are attribute names.
 	 * @param subjectField The value of the parent subjectField.
 	 * @see tmf.Te
 	 */
 	def private recursivePopulate(Proxy.Node node, Map<String,String> tovas, String subjectField) {	
-		if (node.style.name=="Concept" && node.plainText.length()>0){
+		Config.refresh(node)
+		if (node.style.name=="Entry" && node.plainText.length()>0){
 			if(node.plainText.substring(node.plainText.length() - 1)=="="){
 				LogUtils.info(this.class.name+'	The Terminological Entry \"'+node.plainText+'\" is ignored because the last character is equal.')
 			}
@@ -114,7 +115,7 @@ class Tdc extends Sn {
 		}
 		node.children.each {
 			def childNode = it
-			if ((childNode.style.name=="Concept") || (childNode.style.name=="Term")){
+			if ((childNode.style.name=="Entry") || (childNode.style.name=="Term")){
 				def Map<String,String> childTovas = new HashMap<String,String>()
 				childTovas=tovas.clone()
 				String childSubjectField=subjectField
