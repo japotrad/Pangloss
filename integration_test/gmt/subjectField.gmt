@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tmf>
+  <struct type='TDC' id='ID_1723255651'>
+    <struct type='GIS'>
+      <feat type='fileIdentifier'>subjectField.gmt</feat>
+    </struct>
+    <struct type='TE'>
+      <feat type='entryIdentifier'>ID_738613972</feat>
+      <feat type='subjectField'>food</feat>
+      <struct type='LS'>
+        <struct type='TS'>
+          <feat type='term'>dish</feat>
+        </struct>
+      </struct>
+    </struct>
+    <struct type='TE'>
+      <feat type='entryIdentifier'>ID_12026309</feat>
+      <feat type='subjectField'>food &gt; dessert</feat>
+      <struct type='LS'>
+        <struct type='TS'>
+          <feat type='term'>cake</feat>
+        </struct>
+      </struct>
+    </struct>
+    <struct type='TE'>
+      <feat type='entryIdentifier'>ID_1795268918</feat>
+      <feat type='subjectField'>economics &gt; finance</feat>
+      <struct type='LS'>
+        <struct type='TS'>
+          <feat type='term'>operting cash flow</feat>
+        </struct>
+      </struct>
+    </struct>
+    <struct type='TE'>
+      <feat type='entryIdentifier'>ID_775501300</feat>
+      <feat type='subjectField'>economics</feat>
+      <struct type='LS'>
+        <struct type='TS'>
+          <feat type='term'>GDP</feat>
+        </struct>
+      </struct>
+    </struct>
+    <struct type='TE'>
+      <feat type='entryIdentifier'>ID_472801883</feat>
+      <feat type='subjectField'>economics &gt; finance</feat>
+      <struct type='LS'>
+        <struct type='TS'>
+          <feat type='term'>cash flow</feat>
+        </struct>
+      </struct>
+    </struct>
+  </struct>
+</tmf>
