@@ -53,7 +53,6 @@ def setConfig(){
 	LogUtils.info('ExportTermbase	Adding the configuration parameter pangloss_field_separator, '+pangloss_field_separator)
 }
 def run(Proxy.Node node, Proxy.Controller c){
-	setConfig()
 	File configFile=new File(c.getUserDirectory().toString()+File.separator +'pangloss'+File.separator +'export.properties')
 	ConfigSlurper cfgs=new ConfigSlurper()
 	ConfigObject cfgo=new ConfigObject()
