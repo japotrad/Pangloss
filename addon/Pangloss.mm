@@ -251,9 +251,9 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;&lt;tabbed_pane&gt;&#xa;&lt;tab name=&quot;plugins&quot;&gt;&#xa;&lt;separator name=&quot;pangloss&quot;&gt;&#xa;&lt;boolean name=&quot;pangloss_bilingual_notation&quot;/&gt;&#xa;&lt;string name=&quot;pangloss_field_separator&quot; /&gt;&#xa;&lt;/separator&gt;&#xa;&lt;/tab&gt;&#xa;&lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_1560246146" CREATED="1356528131036" MODIFIED="1359208710061"/>
+<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;&lt;tabbed_pane&gt;&#xa;&lt;tab name=&quot;plugins&quot;&gt;&#xa;&lt;separator name=&quot;pangloss&quot;&gt;&#xa;&lt;boolean name=&quot;pangloss_bilingual_notation&quot;/&gt;&#xa;&lt;/separator&gt;&#xa;&lt;/tab&gt;&#xa;&lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_1560246146" CREATED="1356528131036" MODIFIED="1370670625703"/>
 </node>
-<node TEXT="default.properties" POSITION="left" ID="ID_829284969" CREATED="1354893964426" MODIFIED="1359208608091">
+<node TEXT="default.properties" POSITION="left" ID="ID_829284969" CREATED="1354893964426" MODIFIED="1370670600593">
 <edge COLOR="#00ffff" WIDTH="3"/>
 <richcontent TYPE="NOTE">
 
@@ -270,7 +270,6 @@
 </richcontent>
 <attribute_layout NAME_WIDTH="168"/>
 <attribute NAME="pangloss_bilingual_notation" VALUE="true"/>
-<attribute NAME="pangloss_field_separator" VALUE="&gt;"/>
 </node>
 <node TEXT="translations" POSITION="left" ID="ID_301113394" CREATED="1354893964437" MODIFIED="1354893964446">
 <edge COLOR="#ffff00" WIDTH="3"/>
@@ -287,18 +286,17 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="en" ID="ID_1742695989" CREATED="1354893964447" MODIFIED="1362843503717">
-<attribute_layout NAME_WIDTH="205" VALUE_WIDTH="191"/>
+<node TEXT="en" ID="ID_1742695989" CREATED="1354893964447" MODIFIED="1370670595031">
+<attribute_layout NAME_WIDTH="309" VALUE_WIDTH="191"/>
 <attribute NAME="addons.${name}" VALUE="Pangloss"/>
 <attribute NAME="addons.exportTermbase" VALUE="Export the terms..."/>
 <attribute NAME="addons.exportParameterButton" VALUE="Parameters..."/>
 <attribute NAME="OptionPanel.separator.pangloss" VALUE="Pangloss"/>
 <attribute NAME="OptionPanel.pangloss" VALUE="Pangloss"/>
 <attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="Simple bilingual notation"/>
-<attribute NAME="OptionPanel.pangloss_field_separator" VALUE="S&#xe9;parateur champ / sous-champ"/>
 <node TEXT="OptionPanel.separator.pangloss" ID="ID_575741755" CREATED="1356528677384" MODIFIED="1356528677384"/>
 </node>
-<node TEXT="fr" ID="ID_1609652132" CREATED="1354893964447" MODIFIED="1362843474999">
+<node TEXT="fr" ID="ID_1609652132" CREATED="1354893964447" MODIFIED="1370670630484">
 <attribute_layout NAME_WIDTH="205" VALUE_WIDTH="298"/>
 <attribute NAME="addons.${name}" VALUE="Pangloss"/>
 <attribute NAME="addons.exportTermbase" VALUE="Exporter les termes..."/>
@@ -306,7 +304,6 @@
 <attribute NAME="OptionPanel.separator.pangloss" VALUE="Pangloss"/>
 <attribute NAME="OptionPanel.pangloss" VALUE="Pangloss"/>
 <attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="Notation bilingue simplifi&#xe9;e"/>
-<attribute NAME="OptionPanel.pangloss_field_separator" VALUE="Separator Field / Sub-field"/>
 </node>
 <node TEXT="es" ID="ID_918771512" CREATED="1354893964447" MODIFIED="1362843580353">
 <attribute_layout NAME_WIDTH="318" VALUE_WIDTH="298"/>
@@ -317,7 +314,7 @@
 <attribute NAME="OptionPanel.pangloss" VALUE="Pangloss"/>
 <attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="Notaci&#xf3;n biling&#xfc;e simple"/>
 </node>
-<node TEXT="ja" ID="ID_1059175717" CREATED="1354893964447" MODIFIED="1362843605352">
+<node TEXT="ja" ID="ID_1059175717" CREATED="1354893964447" MODIFIED="1370670640296">
 <attribute_layout NAME_WIDTH="205" VALUE_WIDTH="298"/>
 <attribute NAME="addons.${name}" VALUE="&#x30d1;&#x30f3;&#x30b0;&#x30ed;&#x30b9;"/>
 <attribute NAME="addons.exportTermbase" VALUE="&#x7528;&#x8a9e;&#x3092;&#x30a8;&#x30af;&#x30b9;&#x30dd;&#x30fc;&#x30c8;..."/>
@@ -325,7 +322,6 @@
 <attribute NAME="OptionPanel.separator.pangloss" VALUE="&#x30d1;&#x30f3;&#x30b0;&#x30ed;&#x30b9;"/>
 <attribute NAME="OptionPanel.pangloss" VALUE="&#x30d1;&#x30f3;&#x30b0;&#x30ed;&#x30b9;"/>
 <attribute NAME="OptionPanel.pangloss_bilingual_notation" VALUE="&#x7c21;&#x5358;&#x306a;&#x30d0;&#x30a4;&#x30ea;&#x30f3;&#x30ac;&#x30eb;&#x8868;&#x8a18;&#x6cd5;"/>
-<attribute NAME="OptionPanel.pangloss_field_separator" VALUE="&#x5206;&#x91ce;&#x30fb;&#x4e0b;&#x4f4d;&#x5206;&#x91ce;&#x306e;&#x9593;&#x306e;&#x8a18;&#x53f7;"/>
 </node>
 </node>
 <node TEXT="deinstall" POSITION="left" ID="ID_1889438955" CREATED="1354893964455" MODIFIED="1357462993382">
