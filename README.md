@@ -6,7 +6,7 @@ This project has not been completed. No further work on this project is planned.
 Lessons Learned:
 - As a freelancer translator, return on investment of terminology work is low.
 - Even with a short document to translate, the Freeplane map can become pretty big, so linking terms together becomes challenging, and the map becomes messy.
-- The term list produced by this plugin needs to be imported in another tool (e.g. RWS MultiTerm) in order to make it available in the translation tool (e.g. Trados Studio). But in practice, an important part of the terminology work is done while the translation is in progress. This plugin does not address the synchronization issue.
+- The term list produced by this add-on needs to be imported in another tool (e.g. RWS MultiTerm) in order to make it available in the translation tool (e.g. Trados Studio). But in practice, an important part of the terminology work is done while the translation is in progress. This add-on does not address the synchronization issue.
 
 Terminology add-on for Freeplane
 ---------------------------------
